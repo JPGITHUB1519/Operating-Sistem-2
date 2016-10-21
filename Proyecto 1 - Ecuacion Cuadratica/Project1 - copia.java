@@ -10,37 +10,27 @@
 // class to save the value
 class Data
 {
-	public static double a = 12;
-	public static double b = -3;
-	public static double c = 0;
-	public static double res_proc1;
-	public static double res_proc2;
-	public static double res_proc3;
-	public static double res_proc4;
-	public static double res_proc5;
-	public static double res_proc6;
-	public static double res_proc7;
-	public static double res_proc8;
-	public static double res_proc9;
-	public static double res_proc10;
+	public static float a = 12;
+	public static float b = -3;
+	public static float c = 0;
+	public static float res_proc1;
+	public static float res_proc2;
+	public static float res_proc3;
+	public static float res_proc4;
+	public static float res_proc5;
+	public static float res_proc6;
+	public static float res_proc7;
+	public static float res_proc8;
+	public static float res_proc9;
+	public static float res_proc10;
 
-	public static void setValues(double _a, double _b, double _c)
+	public static void setValues(float _a, float _b, float _c)
 	{
 		a = _a;
 		b = _b;
 		c = _c;
 	}
 }
-
-//   ===================
-// 	Time Measure Stuff
-// 	==================
-
-
-// public double measure_time_seconds()
-// {
-
-// }
 
 /*  ===============
 	First Level
@@ -135,7 +125,7 @@ class Process8 extends Thread
 {
 	public void run()
 	{
-		Data.res_proc8 = (double) (Math.pow(Data.res_proc7, 0.5));
+		Data.res_proc8 = (float) (Math.pow(Data.res_proc7, 0.5));
 	}
 }
 
@@ -168,8 +158,9 @@ class Process10 extends Thread
 
 public class Project1
 {
-	public static void calculate_asincronous()
+	public static void main(String [] args)
 	{
+		Data.setValues(1, -2, - 24);
 		// Creating Threads
 		Process1 t1 = new Process1();
 		Process2 t2 = new Process2();
@@ -181,6 +172,13 @@ public class Project1
 		Process8 t8 = new Process8();
 		Process9 t9 = new Process9();
 		Process10 t10 = new Process10();
+
+		/* ===============
+			First Level
+		   ===============
+		*/
+
+		// run first 5 process
 		t1.start();
 		t2.start();
 		t3.start();
@@ -231,7 +229,7 @@ public class Project1
 		{
 			e.printStackTrace();
 		}
-
+		
 		/* ===============
 			Fourth Level
 		   ===============
@@ -264,24 +262,7 @@ public class Project1
 		{
 			e.printStackTrace();
 		}
-	}
 
-	public static void main(String [] args)
-	{
-		long time_start, time_end, time;
-		Data.setValues(1, -2, - 24);
-
-		/* ===============
-			First Level
-		   ===============
-		*/
-
-		// run first 5 process
-		time_start = System.nanoTime();
-		for(int x = 0; x < 100 ; x++)
-			calculate_asincronous();
-		time_end = System.nanoTime();
-		time = time_end - time_start;
 		System.out.println("Proc 1 = " + Data.res_proc1);
 		System.out.println("Proc 2 = " + Data.res_proc2);
 		System.out.println("Proc 3 = " + Data.res_proc3);
@@ -293,10 +274,7 @@ public class Project1
 		System.out.println("Proc 9 = " + Data.res_proc9);
 		System.out.println("Proc 10 = " + Data.res_proc10);
 
-
 		System.out.println("\n********* RESULTADOS ******** \n x1 = " + Data.res_proc9 + "\t x2 = " + + Data.res_proc10);
-		System.out.println("\n********** Tiempo **********\n");
-		System.out.println("Second : " + (time));
 	}
 }
 

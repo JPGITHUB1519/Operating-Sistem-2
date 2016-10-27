@@ -1,11 +1,11 @@
 import java.io.*;
-
-
+import java.util.ArrayList;
 public class Files
 {
 	// read a file line by line
-	public static void readfile_by_line(String filename)
+	public static ArrayList<Integer> readfile_by_line_arraylist(String filename)
 	{
+		ArrayList<Integer> array = new ArrayList<>();
 		File archivo = null;
 		FileReader fr = null;
 		BufferedReader br = null;
@@ -19,8 +19,41 @@ public class Files
 			String line;
 			while((line = br.readLine()) != null)
 			{
-				System.out.println(line);
-			}
+				if (line != "")
+				{
+					array.add(Integer.parseInt(line));
+				}	
+			}	
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return array;
+	}
+
+	public static void readfile_by_line_array(String filename, int [] array)
+	{
+		File archivo = null;
+		FileReader fr = null;
+		BufferedReader br = null;
+		try
+		{
+			archivo = new File(filename);
+			fr = new FileReader(archivo);
+			br = new BufferedReader(fr);
+
+			// reading file by line
+			String line;
+			int cont = 0;
+			while((line = br.readLine()) != null)
+			{
+				if (line != "")
+				{
+					array[cont] = Integer.parseInt(line);
+					cont++;
+				}	
+			}	
 		}
 		catch(Exception e)
 		{
@@ -59,10 +92,8 @@ public class Files
     	  FileWriter fw = new FileWriter(file, true);
     	  BufferedWriter bw = new BufferedWriter(fw);
     	  PrintWriter pw = new PrintWriter(bw);
-    	  pw.println("");
+    	  pw.println(data);
     	  pw.close();
-
-	  	System.out.println("Data successfully appended at the end of file");
 
        }catch(IOException ioe){
     	   System.out.println("Exception occurred:");

@@ -877,38 +877,38 @@ public class Main
 	public static void main(String [] args)
 	{
 		// burbble objects
-		// BurbbleSort_1_99 burbble_1_99 = new BurbbleSort_1_99();
-		// BurbbleSort_100_499 burbble_100_499 = new BurbbleSort_100_499();
-		// BurbbleSort_500_999 burbble_500_999 = new BurbbleSort_500_999();
-		// BurbbleSort_1000_4999 burbble_1000_4999 = new BurbbleSort_1000_4999();
-		// BurbbleSort_5000_9999 burbble_5000_9999 = new BurbbleSort_5000_9999();
-		// BurbbleSort_10000_24999 burbble_10000_24999 = new BurbbleSort_10000_24999();
-		// BurbbleSort_25000_49999 burbble_25000_49999 = new BurbbleSort_25000_49999();
-		// BurbbleSort_50000_99999 burbble_50000_99999 = new BurbbleSort_50000_99999();
+		BurbbleSort_1_99 burbble_1_99 = new BurbbleSort_1_99();
+		BurbbleSort_100_499 burbble_100_499 = new BurbbleSort_100_499();
+		BurbbleSort_500_999 burbble_500_999 = new BurbbleSort_500_999();
+		BurbbleSort_1000_4999 burbble_1000_4999 = new BurbbleSort_1000_4999();
+		BurbbleSort_5000_9999 burbble_5000_9999 = new BurbbleSort_5000_9999();
+		BurbbleSort_10000_24999 burbble_10000_24999 = new BurbbleSort_10000_24999();
+		BurbbleSort_25000_49999 burbble_25000_49999 = new BurbbleSort_25000_49999();
+		BurbbleSort_50000_99999 burbble_50000_99999 = new BurbbleSort_50000_99999();
 		// // imposible to run
-		// BurbbleSort_100000_500000 burbble_100000_500000 = new BurbbleSort_100000_500000();
+		BurbbleSort_100000_500000 burbble_100000_500000 = new BurbbleSort_100000_500000();
 
 		// // heap objects
-		// HeapSort_1_99 heapsort_1_99 = new HeapSort_1_99();
-		// HeapSort_100_499 heapsort_100_499 = new HeapSort_100_499();
-		// HeapSort_500_999 heapsort_500_999 = new HeapSort_500_999();
-		// HeapSort_1000_4999 heapsort_1000_4999 = new HeapSort_1000_4999();
-		// HeapSort_5000_9999 heapsort_5000_9999 = new HeapSort_5000_9999();
-		// HeapSort_10000_24999 heapsort_10000_24999 = new HeapSort_10000_24999();
-		// HeapSort_25000_49999 heapsort_25000_49999 = new HeapSort_25000_49999();
-		// HeapSort_50000_99999 heapsort_50000_99999 = new HeapSort_50000_99999();
-		// HeapSort_100000_500000 heapsort_100000_500000 = new HeapSort_100000_500000();
+		HeapSort_1_99 heapsort_1_99 = new HeapSort_1_99();
+		HeapSort_100_499 heapsort_100_499 = new HeapSort_100_499();
+		HeapSort_500_999 heapsort_500_999 = new HeapSort_500_999();
+		HeapSort_1000_4999 heapsort_1000_4999 = new HeapSort_1000_4999();
+		HeapSort_5000_9999 heapsort_5000_9999 = new HeapSort_5000_9999();
+		HeapSort_10000_24999 heapsort_10000_24999 = new HeapSort_10000_24999();
+		HeapSort_25000_49999 heapsort_25000_49999 = new HeapSort_25000_49999();
+		HeapSort_50000_99999 heapsort_50000_99999 = new HeapSort_50000_99999();
+		HeapSort_100000_500000 heapsort_100000_500000 = new HeapSort_100000_500000();
 
 		// insertion objects
-		// InsertionSort_1_99 insertionsort_1_99 = new InsertionSort_1_99();
-		// InsertionSort_100_499 insertionsort_100_499 = new InsertionSort_100_499();
-		// InsertionSort_500_999 insertionsort_500_999 = new InsertionSort_500_999();
-		// InsertionSort_1000_4999 insertionsort_1000_4999 = new InsertionSort_1000_4999();
-		// InsertionSort_5000_9999 insertionsort_5000_9999 = new InsertionSort_5000_9999();
-		// InsertionSort_10000_24999 insertionsort_10000_24999 = new InsertionSort_10000_24999();
-		// InsertionSort_25000_49999 insertionsort_25000_49999 = new InsertionSort_25000_49999();
-		// InsertionSort_50000_99999 insertionsort_50000_99999 = new InsertionSort_50000_99999();
-		// InsertionSort_100000_500000 insertionsort_100000_500000 = new InsertionSort_100000_500000();
+		InsertionSort_1_99 insertionsort_1_99 = new InsertionSort_1_99();
+		InsertionSort_100_499 insertionsort_100_499 = new InsertionSort_100_499();
+		InsertionSort_500_999 insertionsort_500_999 = new InsertionSort_500_999();
+		InsertionSort_1000_4999 insertionsort_1000_4999 = new InsertionSort_1000_4999();
+		InsertionSort_5000_9999 insertionsort_5000_9999 = new InsertionSort_5000_9999();
+		InsertionSort_10000_24999 insertionsort_10000_24999 = new InsertionSort_10000_24999();
+		InsertionSort_25000_49999 insertionsort_25000_49999 = new InsertionSort_25000_49999();
+		InsertionSort_50000_99999 insertionsort_50000_99999 = new InsertionSort_50000_99999();
+		InsertionSort_100000_500000 insertionsort_100000_500000 = new InsertionSort_100000_500000();
 		
 		// quicksort objects
 		QuickSort_1_99 quicksort_1_99 = new QuickSort_1_99();
@@ -976,6 +976,41 @@ public class Main
 		// quicksort_25000_49999.start();
 		// quicksort_50000_99999.start();
 		// quicksort_100000_500000.start();
+
+		/*
+			=========== Calls =============
+		*/
+
+		// // 1 -99
+		// burbble_1_99.start();
+		// insertionsort_1_99.start();
+		// heapsort_1_99.start();
+		// quicksort_1_99.start();
+
+		// // 100 - 499
+		// insertionsort_100_499.start();
+		// burbble_100_499.start();
+		// heapsort_100_499.start();
+		// quicksort_100_499.start();
+
+		// // 500-999
+		// burbble_500_999.start();
+		// insertionsort_500_999.start();
+		// heapsort_500_999.start();
+		// quicksort_500_999.start();
+
+		// // 1000-4999
+		// burbble_1000_4999.start();
+		// insertionsort_1000_4999.start();
+		// heapsort_1000_4999.start();
+		// quicksort_1000_4999.start();
+
+
+		burbble_5000_9999.start();
+		insertionsort_5000_9999.start();
+		heapsort_5000_9999.start();
+		quicksort_5000_9999.start();
+
 
 	}	
 }

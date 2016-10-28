@@ -101,6 +101,35 @@ public class Files
       }
 	}
 
+	public static void appendArray(String archivo, int [] data)
+	{
+		try
+		{
+			File file = new File(archivo);
+			String line;
+			if(!file.exists())
+			{
+			 	file.createNewFile();
+			}
+			// True for append
+			FileWriter fw = new FileWriter(file, true);
+			BufferedWriter bw = new BufferedWriter(fw);
+			PrintWriter pw = new PrintWriter(bw);
+			for(int i = 0; i < data.length; i++)
+			{
+				
+				line = String.valueOf(data[i]);
+				pw.println(line);
+			}
+	    	pw.close();
+      	}
+       catch(IOException ioe)
+       {
+    	   System.out.println("Exception occurred:");
+    	   ioe.printStackTrace();
+      }
+	}
+
 	public static void main(String [] args)
 	{
 		String archivo = "text_file.txt";

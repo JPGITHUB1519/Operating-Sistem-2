@@ -1,13 +1,14 @@
 import java.util.Random;
 public class Rand
 {
+	/* random generator*/
 	public static int generate_random(int min, int max)
 	{
 		Random rand = new Random();
     	int randomNum = rand.nextInt((max - min) + 1) + min;
     	return randomNum;
 	}
-
+	/* random range specified*/
 	public static void random_1_to_99()
 	{
 		int n;

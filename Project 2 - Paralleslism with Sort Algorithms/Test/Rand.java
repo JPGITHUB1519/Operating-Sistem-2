@@ -8,6 +8,16 @@ public class Rand
     	int randomNum = rand.nextInt((max - min) + 1) + min;
     	return randomNum;
 	}
+	public static void random_1_to_n(int range)
+	{
+		String file_name = "1_" + range + ".txt";
+		int rand_n;
+		for(int i = 1; i <= range; i++)
+		{
+			rand_n = generate_random(1, range);
+			Files.append_file(file_name, String.valueOf(rand_n));
+		}
+	}
 	/* random range specified*/
 	public static void random_1_to_99()
 	{

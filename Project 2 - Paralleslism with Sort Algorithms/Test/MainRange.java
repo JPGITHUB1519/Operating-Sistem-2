@@ -9,7 +9,7 @@ class BurbbleSort_1_n extends Thread
 		String sorted_ubication = "sorted/" + file_name_sorted;
 		// burbble sort
 		long time_start, time_end, time;
-		time_start = System.nanoTime();
+		time_start = System.currentTimeMillis();
 		Files.readfile_by_line_array(file_name, array);
 		BurbbleSort.ordenamiento_burbuja(array);
 		/*
@@ -19,9 +19,9 @@ class BurbbleSort_1_n extends Thread
 		}
 		*/
 		Files.appendArray(sorted_ubication , array);
-		time_end = System.nanoTime();
+		time_end = System.currentTimeMillis();
 		time = time_end - time_start;
-		System.out.println("Burbble Sort 1-" + MainRange.cant_numeros +  "- Time : " + time);
+		System.out.println("Burbble Sort 1-" + MainRange.cant_numeros +  " - Time : " + time);
 	}
 }
 
@@ -36,7 +36,7 @@ class InsertionSort_1_n extends Thread
 		String sorted_ubication = "sorted/" + file_name_sorted;
 		// burbble sort
 		long time_start, time_end, time;
-		time_start = System.nanoTime();
+		time_start = System.currentTimeMillis();
 		Files.readfile_by_line_array(file_name, array);
 		InsertionSort.insertionsort(array);
 		/*
@@ -46,9 +46,9 @@ class InsertionSort_1_n extends Thread
 		}
 		*/
 		Files.appendArray(sorted_ubication , array);
-		time_end = System.nanoTime();
+		time_end = System.currentTimeMillis();
 		time = time_end - time_start;
-		System.out.println("Insertion Sort 1-" + MainRange.cant_numeros +  "- Time : " + time);
+		System.out.println("Insertion Sort 1-" + MainRange.cant_numeros +  " - Time : " + time);
 	}
 }
 
@@ -63,7 +63,7 @@ class QuickSort_1_n extends Thread
 		String sorted_ubication = "sorted/" + file_name_sorted;
 		// burbble sort
 		long time_start, time_end, time;
-		time_start = System.nanoTime();
+		time_start = System.currentTimeMillis();
 		Files.readfile_by_line_array(file_name, array);
 		QuickSort.quicksort(array);
 		/*
@@ -73,9 +73,9 @@ class QuickSort_1_n extends Thread
 		}
 		*/
 		Files.appendArray(sorted_ubication , array);
-		time_end = System.nanoTime();
+		time_end = System.currentTimeMillis();
 		time = time_end - time_start;
-		System.out.println("Quick Sort 1-" + MainRange.cant_numeros +  "- Time : " + time);
+		System.out.println("Quick Sort 1-" + MainRange.cant_numeros +  " - Time : " + time);
 	}
 }
 
@@ -90,7 +90,7 @@ class HeapSort_1_n extends Thread
 		String sorted_ubication = "sorted/" + file_name_sorted;
 		// burbble sort
 		long time_start, time_end, time;
-		time_start = System.nanoTime();
+		time_start = System.currentTimeMillis();
 		Files.readfile_by_line_array(file_name, array);
 		HeapSort.heapsort(array);
 		/*
@@ -100,9 +100,9 @@ class HeapSort_1_n extends Thread
 		}
 		*/
 		Files.appendArray(sorted_ubication , array);
-		time_end = System.nanoTime();
+		time_end = System.currentTimeMillis();
 		time = time_end - time_start;
-		System.out.println("HeapSort 1-" + MainRange.cant_numeros +  "- Time : " + time);
+		System.out.println("HeapSort 1-" + MainRange.cant_numeros +  " - Time : " + time);
 	}
 }
 
@@ -113,16 +113,17 @@ public class MainRange
 	public static void main(String [] args)
 	{
 		// generating numbers
-		MainRange.cant_numeros = 50000;
+		MainRange.cant_numeros = 100;
 		System.out.println("\nGenerando.......");
-		// creating random fiels
-		Rand.random_1_to_n(MainRange.cant_numeros);
+		// creating random fiedls
+		//Rand.random_1_to_n(MainRange.cant_numeros);
 
 		// object stuffs
 		BurbbleSort_1_n burbblesort_1_n = new BurbbleSort_1_n();
 		InsertionSort_1_n insertionsort_1_n = new InsertionSort_1_n();
 		QuickSort_1_n quicksort_1_n = new QuickSort_1_n();
 		HeapSort_1_n heapsort_1_n = new HeapSort_1_n();
+
 		// running!
 		//burbblesort_1_n.run();
 		//insertionsort_1_n.run();

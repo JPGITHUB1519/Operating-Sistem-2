@@ -9,7 +9,7 @@ namespace Utils
     {
         int idseccion_dm;
         string nombre;
-        int poblacion;        
+        long poblacion;        
         float area;
         string punto_cardinal;
         int iddistrito;
@@ -26,7 +26,7 @@ namespace Utils
             set { nombre = value; }
         }
 
-        public int Poblacion
+        public long Poblacion
         {
             get { return poblacion; }
             set { poblacion = value; }

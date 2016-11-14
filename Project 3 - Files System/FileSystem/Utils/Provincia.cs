@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 namespace Utils
 {
     public class Provincia
@@ -42,5 +41,44 @@ namespace Utils
             get { return punto_cardinal; }
             set { punto_cardinal = value; }
         }
+
+        public void insertarProvincia(Provincia prov)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.provincia_dir;
+            string data = prov.Idprovincia.ToString() + sep + prov.Nombre + sep + prov.Localizacion + sep + prov.Area.ToString() + sep + prov.Punto_cardinal + sep;
+            Utilities.writeSingleLineToFile(dir, data);
+        }
+
+        public void EliminarProvincia(int idprovincia)
+        {
+
+           
+        }
+
+        /*
+        public static List<Provincia> fillListProvinciaFromFile()
+        {
+            string dir = @"C:\Users\Programador\Desktop\" + Utils.Utilities.dir;
+            string line;
+            Provincia prov = new Provincia();
+            List<Provincia> lista = new List<Provincia>();
+            System.IO.StreamReader file = new System.IO.StreamReader(dir);
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] words = line.Split(',');
+                prov.Idprovincia = Convert.ToInt32(words[0]);
+                prov.Nombre = words[1];
+                prov.Localizacion = words[2];
+                prov.Area = float.Parse(words[3]);
+                prov.Punto_cardinal = words[4];
+                lista.Add(prov);
+            }
+
+            return lista;
+        }
+        */
+
+
     }
 }

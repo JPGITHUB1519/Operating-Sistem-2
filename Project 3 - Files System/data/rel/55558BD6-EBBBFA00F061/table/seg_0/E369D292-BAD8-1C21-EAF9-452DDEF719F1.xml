@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E369D292-BAD8-1C21-EAF9-452DDEF719F1" name="Distrito_Municipal">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="iddistrito" id="F605B351-637F-9365-4AD0-C6B3672DF835">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_Municipiov1_idmunicipio</notNullConstraintName>
+</Column>
+<Column name="nombre" id="A9B8AEDC-CFF6-2085-A81A-2C92B046C790">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="localizacion" id="6B89321B-B7AC-13D9-1949-2C91D748E1E4">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area" id="02902BCC-1723-3DDE-F808-A4002E2F0134">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="punto_cardinal" id="392FB89E-A386-80E1-DD4B-003A686C3251">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Provincia_idprovincia" id="A74D5936-70A1-46ED-1E05-D4E2A578DFC2">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9847006-FD7F-8056-51FB-B23F9ECEB527" referredColumn="BF9882C3-F411-49E0-26B2-CC7B99AD2648"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5AEA925D-6FDC-0F39-7D1D-FA3EC43C6F52" name="Municipiov1_PK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F605B351-637F-9365-4AD0-C6B3672DF835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="436D03A3-B9F5-4B71-D19F-B1D686CCEF4C" name="Municipiov1_Provincia_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:56:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A74D5936-70A1-46ED-1E05-D4E2A578DFC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

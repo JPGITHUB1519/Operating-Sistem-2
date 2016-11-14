@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34F734E6-64B7-6043-9B8B-A1054855C3FD" name="Seccion_dm">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idseccion_dm" id="2BEC98B9-1FA2-7DFB-3FDC-50D501D6D112">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="93831AE6-12EE-9E78-4950-5B47D2D82569">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poblacion" id="BCBBA5F6-0069-633A-A726-3B90E2FF6916">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area" id="70A502A2-3F86-A871-05B7-3198BBC9CC90">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="punto_cardinal" id="1262FBCC-2A2A-6BB3-3825-B58C1C3D22BC">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Distrito_Municipal_idmunicipio" id="E5A9C67D-47A9-D103-157D-599CE5E0DB57">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:00:27 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D45A7696-F4FE-67A8-9DF7-DAB3AF96DCCE" referredColumn="F605B351-637F-9365-4AD0-C6B3672DF835"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE04AA53-1831-894A-7A8A-E7D5A8E20A2C" name="Barriov1_PKv1">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 12:59:23 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BEC98B9-1FA2-7DFB-3FDC-50D501D6D112"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="159D37B4-6B94-8CB7-F034-B1AE067C3C3D" name="Seccion_dm_Distrito_Municipal_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:00:27 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5A9C67D-47A9-D103-157D-599CE5E0DB57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

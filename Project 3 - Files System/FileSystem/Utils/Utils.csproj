@@ -39,7 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barrio.cs" />
+    <Compile Include="BarrioDM.cs" />
+    <Compile Include="DistritoMunicipal.cs" />
+    <Compile Include="Municipio.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provincia.cs" />
+    <Compile Include="SeccionDM.cs" />
+    <Compile Include="Urbanizacion.cs" />
+    <Compile Include="UrbanizacionDM.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

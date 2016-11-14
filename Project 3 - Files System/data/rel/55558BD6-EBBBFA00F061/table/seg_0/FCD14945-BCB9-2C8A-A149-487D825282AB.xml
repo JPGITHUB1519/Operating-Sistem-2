@@ -64,9 +64,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Distrito_Municipal_idmunicipio" id="5D7DD66D-3255-7F64-CE17-FDB78B6CED38">
+<Column name="Distrito_Municipal_iddistrito" id="14A316D7-AB73-6CC8-16F0-A2E96A4A8FC3">
 <createdBy>Programador</createdBy>
-<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<createdTime>2016-11-14 14:06:26 UTC</createdTime>
 <ownerDesignName>data</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -75,7 +75,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="DC6E2C3C-9D7B-C3B2-B7E6-38B9863E45A5" referredColumn="F605B351-637F-9365-4AD0-C6B3672DF835"/>
+<colAssociation fkAssociation="A4117933-1557-9059-39B2-9EBDF2C01D4F" referredColumn="F605B351-637F-9365-4AD0-C6B3672DF835"/>
 </associations>
 </Column>
 </columns>
@@ -91,14 +91,14 @@
 <colUsage columnID="0F13113D-C858-F564-C722-D294AD3CD4BF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="35330571-C6A7-C079-C32F-5A57EDC788D9" name="Seccion_dmv1v1_Distrito_Municipal_FK">
+<ind_PK_UK id="941B9F72-0EA5-8CEA-0568-141AAE3EAACD" name="Urbanizacion_dm_Distrito_Municipal_FK">
 <createdBy>Programador</createdBy>
-<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<createdTime>2016-11-14 14:06:26 UTC</createdTime>
 <ownerDesignName>data</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5D7DD66D-3255-7F64-CE17-FDB78B6CED38"/>
+<colUsage columnID="14A316D7-AB73-6CC8-16F0-A2E96A4A8FC3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

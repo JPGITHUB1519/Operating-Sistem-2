@@ -47,9 +47,23 @@ namespace Utils
             }
         }
 
-        public static void deleteFromFileByProvincia()
+        public static void deleteFromFileById(string dir, int id)
         {
-            
+            // vaciar archivo
+            //System.IO.File.WriteAllText(dir, string.Empty);
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader(dir);
+            // eliminar dato
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] words = line.Split(',');
+                if (Convert.ToInt32(words[0]) != id)
+                {
+                    Console.Write(words[0]);
+                    Utilities.writeSingleLineToFile(dir, line);
+                }
+            }
+            file.Close();
         }
 
         // fill datatable from a file

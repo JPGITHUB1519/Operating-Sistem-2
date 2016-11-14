@@ -37,5 +37,10 @@ namespace FileSystem
             FrmConsProvincia conprov = new FrmConsProvincia();
             conprov.Show();
         }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            Utilities.deleteFromFileById(Utilities.provincia_dir, 1);
+        }
     }
 }

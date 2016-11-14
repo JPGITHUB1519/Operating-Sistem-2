@@ -1,3 +1,2 @@
-idprovincia,nombre,localizacion,area,punto_cardinal
-2,Santo Domingo,Lejos,5050,Este,
-3,Puerto Plata,Region Norte,5050,Norte,
+1,1,1,1,1
+2,2,2,2,2

@@ -30,7 +30,9 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,27 +50,47 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(48, 167);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(663, 396);
             this.dataGridView1.TabIndex = 50;
             // 
-            // button1
+            // txtbuscar
             // 
-            this.button1.Location = new System.Drawing.Point(139, 495);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 41);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtbuscar.Location = new System.Drawing.Point(226, 91);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(246, 20);
+            this.txtbuscar.TabIndex = 52;
+            this.txtbuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Image = global::FileSystem.Properties.Resources.search;
+            this.btnbuscar.Location = new System.Drawing.Point(504, 64);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(106, 72);
+            this.btnbuscar.TabIndex = 54;
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(140, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.TabIndex = 104;
+            this.label3.Text = "Buscar";
             // 
             // FrmConsProvincia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 580);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(747, 663);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label8);
             this.Name = "FrmConsProvincia";
@@ -84,6 +106,8 @@
 
         public System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtbuscar;
+        public System.Windows.Forms.Button btnbuscar;
+        public System.Windows.Forms.Label label3;
     }
 }

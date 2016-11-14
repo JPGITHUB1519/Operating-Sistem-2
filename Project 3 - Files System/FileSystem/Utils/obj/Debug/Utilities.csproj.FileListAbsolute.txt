@@ -2,3 +2,4 @@ C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files S
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.pdb
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.dll
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.pdb
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utilities.csprojResolveAssemblyReference.cache

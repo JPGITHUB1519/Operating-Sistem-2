@@ -10,7 +10,8 @@ namespace Tester
     {
         static void Main(string[] args)
         {
-            
+            Utilities.deleteFromFileById(Utilities.provincia_dir, 1);
+            Console.ReadKey();
         }
     }
 }

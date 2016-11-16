@@ -3,3 +3,4 @@ idmunicipio,idprovincia,nombre,location,area,punto_cardinal
 2,2,2,2,2,2
 3,1,a,a,5050,a
 4,2,Tamboril,Santiago,5020,Norte
+1,barrio_prueba,500000,5050,Norte,1

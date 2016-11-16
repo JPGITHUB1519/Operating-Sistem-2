@@ -56,6 +56,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsBarrio.Designer.cs">
+      <DependentUpon>FrmConsBarrio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsMunicipio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     </Compile>
     <Compile Include="FrmConsProvincia.Designer.cs">
       <DependentUpon>FrmConsProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantBarrio.Designer.cs">
+      <DependentUpon>FrmMantBarrio.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMantMunicipio.cs">
       <SubType>Form</SubType>
@@ -94,11 +106,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConsBarrio.resx">
+      <DependentUpon>FrmConsBarrio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsMunicipio.resx">
       <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsProvincia.resx">
       <DependentUpon>FrmConsProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantBarrio.resx">
+      <DependentUpon>FrmMantBarrio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantMunicipio.resx">
       <DependentUpon>frmMantMunicipio.cs</DependentUpon>
@@ -122,6 +140,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reporte_barrio.rdlc" />
     <EmbeddedResource Include="reporte_municipio.rdlc" />
     <EmbeddedResource Include="reporte_provincia.rdlc" />
     <None Include="dataset.xsc">

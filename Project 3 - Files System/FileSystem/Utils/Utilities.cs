@@ -12,6 +12,7 @@ namespace Utils
         public static char sep = ',';
         public static string provincia_dir = "file.txt";
         public static string municipio_dir = "file_municipio.txt";
+        public static string barrio_dir = "file_barrio.txt";
         public static List<string> readFileByList(string dir)
         {
             int counter = 0;

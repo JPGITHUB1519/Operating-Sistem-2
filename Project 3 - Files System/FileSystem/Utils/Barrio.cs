@@ -49,5 +49,13 @@ namespace Utils
             get { return idmunicipio; }
             set { idmunicipio = value; }
         }
+
+        public void insertarBarrio(Barrio ba)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.barrio_dir;
+            string data = (ba.idbarrio.ToString() +  sep + ba.idmunicipio.ToString() + sep + ba.nombre + sep + ba.poblacion +sep + ba.area + sep + ba.punto_cardinal);
+            Utilities.writeSingleLineToFile(dir, data);
+        }
     }
 }

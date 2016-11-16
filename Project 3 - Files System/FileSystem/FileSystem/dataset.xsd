@@ -35,6 +35,18 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="barrio" msprop:Generator_TableClassName="barrioDataTable" msprop:Generator_TableVarName="tablebarrio" msprop:Generator_TablePropName="barrio" msprop:Generator_RowDeletingName="barrioRowDeleting" msprop:Generator_RowChangingName="barrioRowChanging" msprop:Generator_RowEvHandlerName="barrioRowChangeEventHandler" msprop:Generator_RowDeletedName="barrioRowDeleted" msprop:Generator_UserTableName="barrio" msprop:Generator_RowChangedName="barrioRowChanged" msprop:Generator_RowEvArgName="barrioRowChangeEvent" msprop:Generator_RowClassName="barrioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idbarrio" msprop:Generator_ColumnVarNameInTable="columnidbarrio" msprop:Generator_ColumnPropNameInRow="idbarrio" msprop:Generator_ColumnPropNameInTable="idbarrioColumn" msprop:Generator_UserColumnName="idbarrio" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="poblacion" msprop:Generator_ColumnVarNameInTable="columnpoblacion" msprop:Generator_ColumnPropNameInRow="poblacion" msprop:Generator_ColumnPropNameInTable="poblacionColumn" msprop:Generator_UserColumnName="poblacion" type="xs:string" minOccurs="0" />
+              <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="punto_cardinal" msprop:Generator_ColumnVarNameInTable="columnpunto_cardinal" msprop:Generator_ColumnPropNameInRow="punto_cardinal" msprop:Generator_ColumnPropNameInTable="punto_cardinalColumn" msprop:Generator_UserColumnName="punto_cardinal" type="xs:string" minOccurs="0" />
+              <xs:element name="idmunicipio" msprop:Generator_ColumnVarNameInTable="columnidmunicipio" msprop:Generator_ColumnPropNameInRow="idmunicipio" msprop:Generator_ColumnPropNameInTable="idmunicipioColumn" msprop:Generator_UserColumnName="idmunicipio" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

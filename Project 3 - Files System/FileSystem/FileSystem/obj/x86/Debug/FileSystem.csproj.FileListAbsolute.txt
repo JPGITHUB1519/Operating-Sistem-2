@@ -13,3 +13,5 @@ C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files S
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmreportes.resources
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\RdlCompile.cache
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmMantMunicipio.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsMunicipio.resources

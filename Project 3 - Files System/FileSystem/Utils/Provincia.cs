@@ -46,15 +46,11 @@ namespace Utils
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.provincia_dir;
-            string data = prov.Idprovincia.ToString() + sep + prov.Nombre + sep + prov.Localizacion + sep + prov.Area.ToString() + sep + prov.Punto_cardinal + sep;
+            string data = prov.Idprovincia.ToString() + sep + prov.Nombre + sep + prov.Localizacion + sep + prov.Area.ToString() + sep + prov.Punto_cardinal;
             Utilities.writeSingleLineToFile(dir, data);
         }
 
-        public void EliminarProvincia(int idprovincia)
-        {
 
-           
-        }
 
         /*
         public static List<Provincia> fillListProvinciaFromFile()

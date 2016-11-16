@@ -11,7 +11,7 @@ namespace Utils
     {
         public static char sep = ',';
         public static string provincia_dir = "file.txt";
-
+        public static string municipio_dir = "file_municipio.txt";
         public static List<string> readFileByList(string dir)
         {
             int counter = 0;
@@ -86,6 +86,21 @@ namespace Utils
             File.Delete(copy_file_name);
             File.WriteAllText(dir, String.Empty);
             File.WriteAllText(dir, copy);
+        }
+
+        public static List<String> readIdsFromFile(string dir)
+        {
+            string line;
+            string id;
+            List<string> lista = new List<string>();
+            System.IO.StreamReader file = new System.IO.StreamReader(dir);
+            while ((line = file.ReadLine()) != null)
+            {
+                id = line.Split(Utilities.sep)[0];
+                lista.Add(id);
+            }
+            file.Close();
+            return lista;
         }
 
         // fill datatable from a file

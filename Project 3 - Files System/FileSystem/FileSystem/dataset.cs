@@ -9,8 +9,12 @@
 }
 
 namespace FileSystem {
-    
-    
-    public partial class dataset_provincia {
+
+
+    public partial class dataset
+    {
+        partial class dt_municipioDataTable
+        {
+        }
     }
 }

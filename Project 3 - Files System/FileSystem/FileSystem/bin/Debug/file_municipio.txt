@@ -1,0 +1,5 @@
+idmunicipio,idprovincia,nombre,location,area,punto_cardinal
+1,1,1,1,1,1
+2,2,2,2,2,2
+3,1,a,a,5050,a
+4,2,Tamboril,Santiago,5020,Norte

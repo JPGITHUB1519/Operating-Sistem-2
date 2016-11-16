@@ -15,7 +15,7 @@ namespace FileSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMantProvincia());
+            Application.Run(new frmMantMunicipio());
         }
     }
 }

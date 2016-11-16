@@ -14,15 +14,18 @@ namespace FileSystem
     {
         string nombre_reporte;
         DataTable dt;
+        string report_dataset_name;
         public frmreportes()
         {
             InitializeComponent();
         }
-        public frmreportes(string nombre_reporte, DataTable dt)
+        public frmreportes(string nombre_reporte, DataTable dt, string report_dataset_name)
         {
             InitializeComponent(); ;
             this.nombre_reporte = nombre_reporte;
             this.dt = dt;
+            this.report_dataset_name = report_dataset_name;
+
         }
         
         private void frmreportes_Load(object sender, EventArgs e)
@@ -31,7 +34,7 @@ namespace FileSystem
             dataset ds = new dataset();
             DataTable dt = new DataTable();
             dt = Utils.Utilities.fileToDataTable(Utils.Utilities.provincia_dir);
-            ReportDataSource rds = new ReportDataSource("dataset", this.dt);
+            ReportDataSource rds = new ReportDataSource(this.report_dataset_name, this.dt);
             //MessageBox.Show(dt.Rows.Count.ToString());
             //this.reportViewer1.LocalReport.ReportEmbeddedResource = "FileSystem.reporte_provincia.rdlc";
             this.reportViewer1.LocalReport.ReportEmbeddedResource = this.nombre_reporte;

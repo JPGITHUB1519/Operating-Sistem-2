@@ -56,11 +56,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsMunicipio.Designer.cs">
+      <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsProvincia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmConsProvincia.Designer.cs">
       <DependentUpon>FrmConsProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantMunicipio.Designer.cs">
+      <DependentUpon>frmMantMunicipio.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMantProvincia.cs">
       <SubType>Form</SubType>
@@ -82,8 +94,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConsMunicipio.resx">
+      <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsProvincia.resx">
       <DependentUpon>FrmConsProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantMunicipio.resx">
+      <DependentUpon>frmMantMunicipio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantProvincia.resx">
       <DependentUpon>frmMantProvincia.cs</DependentUpon>
@@ -104,6 +122,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reporte_municipio.rdlc" />
     <EmbeddedResource Include="reporte_provincia.rdlc" />
     <None Include="dataset.xsc">
       <DependentUpon>dataset.xsd</DependentUpon>
@@ -147,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User-Interface-Login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

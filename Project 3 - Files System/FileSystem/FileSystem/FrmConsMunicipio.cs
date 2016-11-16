@@ -7,50 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Utils;
-using System.Data;
+
 namespace FileSystem
 {
-    public partial class FrmConsProvincia : Form
+    public partial class FrmConsMunicipio : Form
     {
         DataTable dt;
         DataTable aux_dt;
-        public FrmConsProvincia()
+        public FrmConsMunicipio()
         {
             InitializeComponent();
         }
 
-        public FrmConsProvincia(string nombre_reporte, DataTable dt)
+        private void FrmConsMunicipio_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void FrmConsProvincia_Load(object sender, EventArgs e)
-        {
-            
             this.dt = Utilities.fileToDataTable(Utilities.municipio_dir);
             this.aux_dt = this.dt;
             this.dataGridView1.DataSource = dt;
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 //this code is used to search Name on the basis of TextBox1.text
@@ -58,7 +35,7 @@ namespace FileSystem
                 string query = string.Format("nombre LIKE '{0}%'", txtbuscar.Text);
                 DataRow[] rowsFiltered = this.dt.Select(query);
                 this.aux_dt = rowsFiltered.CopyToDataTable();
-                
+
                 this.dataGridView1.DataSource = this.aux_dt;
             }
             catch (Exception)
@@ -67,21 +44,10 @@ namespace FileSystem
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            // stuffs
-            
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button1_Click_3(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             //MessageBox.Show(this.dt.Rows.Count.ToString());
-            frmreportes rep = new frmreportes("FileSystem.reporte_provincia.rdlc", this.aux_dt, "dataset");
+            frmreportes rep = new frmreportes("FileSystem.reporte_municipio.rdlc", this.aux_dt, "dataset_municipio");
             rep.Show();
         }
     }

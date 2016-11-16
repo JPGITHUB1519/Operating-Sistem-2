@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Utils
 {
-    class Municipio
+    public class Municipio
     {
         int idmunicipio;
         string nombre;
@@ -48,6 +48,14 @@ namespace Utils
         {
             get { return idprovincia; }
             set { idprovincia = value; }
+        }
+
+        public void insertarMunicipio(Municipio mun)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.municipio_dir;
+            string data = mun.idmunicipio.ToString() + sep + mun.Idprovincia + sep + mun.Nombre + sep + mun.Localizacion + sep + mun.Area.ToString() + sep + mun.Punto_cardinal;
+            Utilities.writeSingleLineToFile(dir, data);
         }
 
     }

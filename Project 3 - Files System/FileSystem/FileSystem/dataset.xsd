@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataset_provincia" targetNamespace="http://tempuri.org/dataset_provincia.xsd" xmlns:mstns="http://tempuri.org/dataset_provincia.xsd" xmlns="http://tempuri.org/dataset_provincia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataset_provincia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataset_provincia" msprop:Generator_UserDSName="dataset_provincia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_provincia" msprop:Generator_TableClassName="dt_provinciaDataTable" msprop:Generator_TableVarName="tabledt_provincia" msprop:Generator_TablePropName="dt_provincia" msprop:Generator_RowDeletingName="dt_provinciaRowDeleting" msprop:Generator_RowChangingName="dt_provinciaRowChanging" msprop:Generator_RowEvHandlerName="dt_provinciaRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_provinciaRowDeleted" msprop:Generator_UserTableName="dt_provincia" msprop:Generator_RowChangedName="dt_provinciaRowChanged" msprop:Generator_RowEvArgName="dt_provinciaRowChangeEvent" msprop:Generator_RowClassName="dt_provinciaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idprovincia" msprop:Generator_ColumnVarNameInTable="columnidprovincia" msprop:Generator_ColumnPropNameInRow="idprovincia" msprop:Generator_ColumnPropNameInTable="idprovinciaColumn" msprop:Generator_UserColumnName="idprovincia" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" msprop:Generator_UserColumnName="location" type="xs:string" minOccurs="0" />
+              <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="punto_cardinal" msprop:Generator_ColumnVarNameInTable="columnpunto_cardinal" msprop:Generator_ColumnPropNameInRow="punto_cardinal" msprop:Generator_ColumnPropNameInTable="punto_cardinalColumn" msprop:Generator_UserColumnName="punto_cardinal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

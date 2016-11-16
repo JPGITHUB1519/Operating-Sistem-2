@@ -12,17 +12,25 @@ namespace FileSystem
 {
     public partial class FrmConsProvincia : Form
     {
+        DataTable dt;
+        DataTable aux_dt;
         public FrmConsProvincia()
         {
             InitializeComponent();
         }
 
+        public FrmConsProvincia(string nombre_reporte, DataTable dt)
+        {
+            
+        }
+
         private void FrmConsProvincia_Load(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = Utilities.fileToDataTable(Utilities.provincia_dir);
+            
+            this.dt = Utilities.fileToDataTable(Utilities.provincia_dir);
+            this.aux_dt = this.dt;
             this.dataGridView1.DataSource = dt;
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,17 +50,34 @@ namespace FileSystem
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 //this code is used to search Name on the basis of TextBox1.text
-                (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("nombre LIKE '{0}%'", txtbuscar.Text);
-
-                dataGridView1.Refresh();
+                //(dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("nombre LIKE '{0}%'", txtbuscar.Text);
+                string query = string.Format("nombre LIKE '{0}%'", txtbuscar.Text);
+                DataRow[] rowsFiltered = this.dt.Select(query);
+                this.aux_dt = rowsFiltered.CopyToDataTable();
+                
+                this.dataGridView1.DataSource = this.aux_dt;
             }
             catch (Exception)
             {
 
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            // stuffs
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            //MessageBox.Show(this.dt.Rows.Count.ToString());
+            frmreportes rep = new frmreportes("FileSystem.reporte_provincia.rdlc", this.aux_dt);
+            rep.Show();
         }
     }
 }

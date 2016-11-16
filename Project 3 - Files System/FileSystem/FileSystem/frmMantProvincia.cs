@@ -40,7 +40,7 @@ namespace FileSystem
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            Utilities.deleteFromFileById(Utilities.provincia_dir, 1);
+            Utilities.deleteFromFileById(Utilities.provincia_dir, Convert.ToInt32(txtcodigo.Text));
         }
     }
 }

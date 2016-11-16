@@ -28,6 +28,21 @@ namespace Utils
             return lista;
         }
 
+        public static string[] fileToStringArray(string dir)
+        {
+            string[] lines = File.ReadAllLines("file.txt");
+            return lines;
+        }
+
+        public static string fileToString(string dir)
+        {
+            string content = File.ReadAllText(dir);
+            return content;
+        }
+
+
+        
+
         public static void writeListToFile(string dir, List<string> lista)
         {
             using (System.IO.StreamWriter file = File.AppendText(dir))
@@ -49,21 +64,28 @@ namespace Utils
 
         public static void deleteFromFileById(string dir, int id)
         {
-            // vaciar archivo
-            //System.IO.File.WriteAllText(dir, string.Empty);
-            string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(dir);
-            // eliminar dato
-            while ((line = file.ReadLine()) != null)
+            string line = null;
+            string line_to_delete = id.ToString();
+            string id_file;
+            string copy_file_name = "copy" + dir;
+            string copy = "";
+            using (StreamReader reader = new StreamReader(dir))
             {
-                string[] words = line.Split(',');
-                if (Convert.ToInt32(words[0]) != id)
+                using (StreamWriter writer = new StreamWriter(copy_file_name))
                 {
-                    Console.Write(words[0]);
-                    Utilities.writeSingleLineToFile(dir, line);
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        id_file = line.Split(Utilities.sep)[0];
+                        if (String.Compare(id_file, id.ToString()) == 0)
+                            continue;
+                        writer.WriteLine(line);
+                    }
                 }
             }
-            file.Close();
+            copy = fileToString(copy_file_name);
+            File.Delete(copy_file_name);
+            File.WriteAllText(dir, String.Empty);
+            File.WriteAllText(dir, copy);
         }
 
         // fill datatable from a file
@@ -81,7 +103,7 @@ namespace Utils
             {
                 DataRow dr = dt.NewRow();
                 string[] values = newline.Split(Utilities.sep);
-                for (int i = 0; i < values.Length - 1; i++)
+                for (int i = 0; i < values.Length; i++)
                 {
                     dr[i] = values[i];
                 }

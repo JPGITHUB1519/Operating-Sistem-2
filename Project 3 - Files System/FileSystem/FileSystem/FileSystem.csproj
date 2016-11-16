@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -44,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dataset.cs">
+      <DependentUpon>dataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsProvincia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +67,12 @@
     </Compile>
     <Compile Include="frmMantProvincia.Designer.cs">
       <DependentUpon>frmMantProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmreportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreportes.Designer.cs">
+      <DependentUpon>frmreportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -70,6 +88,9 @@
     <EmbeddedResource Include="frmMantProvincia.resx">
       <DependentUpon>frmMantProvincia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmreportes.resx">
+      <DependentUpon>frmreportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +104,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="reporte_provincia.rdlc" />
+    <None Include="dataset.xsc">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dataset.xss">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Utils.Provincia.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

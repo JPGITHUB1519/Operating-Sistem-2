@@ -31,8 +31,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.btnbuscar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,37 +58,48 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(226, 91);
+            this.txtbuscar.Location = new System.Drawing.Point(156, 89);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(246, 20);
             this.txtbuscar.TabIndex = 52;
             this.txtbuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(91, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.TabIndex = 104;
+            this.label3.Text = "Buscar";
+            // 
             // btnbuscar
             // 
             this.btnbuscar.Image = global::FileSystem.Properties.Resources.search;
-            this.btnbuscar.Location = new System.Drawing.Point(504, 64);
+            this.btnbuscar.Location = new System.Drawing.Point(433, 62);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(106, 72);
             this.btnbuscar.TabIndex = 54;
             this.btnbuscar.UseVisualStyleBackColor = true;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
-            // label3
+            // button1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(140, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
-            this.label3.TabIndex = 104;
-            this.label3.Text = "Buscar";
+            this.button1.Image = global::FileSystem.Properties.Resources.search;
+            this.button1.Location = new System.Drawing.Point(573, 64);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 72);
+            this.button1.TabIndex = 105;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // FrmConsProvincia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 663);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.txtbuscar);
@@ -109,5 +121,6 @@
         private System.Windows.Forms.TextBox txtbuscar;
         public System.Windows.Forms.Button btnbuscar;
         public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button button1;
     }
 }

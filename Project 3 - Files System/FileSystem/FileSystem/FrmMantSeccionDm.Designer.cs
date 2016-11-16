@@ -120,7 +120,7 @@
             this.groupBox1.Size = new System.Drawing.Size(737, 322);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mantenimiento de Barrios";
+            this.groupBox1.Text = "Mantenimiento de Seccion DM";
             // 
             // label1
             // 

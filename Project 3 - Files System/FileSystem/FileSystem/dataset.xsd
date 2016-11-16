@@ -12,7 +12,7 @@
   <xs:element name="dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataset" msprop:Generator_UserDSName="dataset">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="dt_provincia" msprop:Generator_TableClassName="dt_provinciaDataTable" msprop:Generator_TableVarName="tabledt_provincia" msprop:Generator_TablePropName="dt_provincia" msprop:Generator_RowDeletingName="dt_provinciaRowDeleting" msprop:Generator_RowChangingName="dt_provinciaRowChanging" msprop:Generator_RowEvHandlerName="dt_provinciaRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_provinciaRowDeleted" msprop:Generator_UserTableName="dt_provincia" msprop:Generator_RowChangedName="dt_provinciaRowChanged" msprop:Generator_RowEvArgName="dt_provinciaRowChangeEvent" msprop:Generator_RowClassName="dt_provinciaRow">
+        <xs:element name="dt_provincia" msprop:Generator_TableClassName="dt_provinciaDataTable" msprop:Generator_TableVarName="tabledt_provincia" msprop:Generator_RowChangedName="dt_provinciaRowChanged" msprop:Generator_TablePropName="dt_provincia" msprop:Generator_RowDeletingName="dt_provinciaRowDeleting" msprop:Generator_RowChangingName="dt_provinciaRowChanging" msprop:Generator_RowEvHandlerName="dt_provinciaRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_provinciaRowDeleted" msprop:Generator_RowClassName="dt_provinciaRow" msprop:Generator_UserTableName="dt_provincia" msprop:Generator_RowEvArgName="dt_provinciaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idprovincia" msprop:Generator_ColumnVarNameInTable="columnidprovincia" msprop:Generator_ColumnPropNameInRow="idprovincia" msprop:Generator_ColumnPropNameInTable="idprovinciaColumn" msprop:Generator_UserColumnName="idprovincia" type="xs:string" minOccurs="0" />
@@ -23,7 +23,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="dt_municipio" msprop:Generator_TableClassName="dt_municipioDataTable" msprop:Generator_TableVarName="tabledt_municipio" msprop:Generator_RowChangedName="dt_municipioRowChanged" msprop:Generator_TablePropName="dt_municipio" msprop:Generator_RowDeletingName="dt_municipioRowDeleting" msprop:Generator_RowChangingName="dt_municipioRowChanging" msprop:Generator_RowEvHandlerName="dt_municipioRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_municipioRowDeleted" msprop:Generator_RowClassName="dt_municipioRow" msprop:Generator_UserTableName="dt_municipio" msprop:Generator_RowEvArgName="dt_municipioRowChangeEvent">
+        <xs:element name="dt_municipio" msprop:Generator_TableClassName="dt_municipioDataTable" msprop:Generator_TableVarName="tabledt_municipio" msprop:Generator_TablePropName="dt_municipio" msprop:Generator_RowDeletingName="dt_municipioRowDeleting" msprop:Generator_RowChangingName="dt_municipioRowChanging" msprop:Generator_RowEvHandlerName="dt_municipioRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_municipioRowDeleted" msprop:Generator_UserTableName="dt_municipio" msprop:Generator_RowChangedName="dt_municipioRowChanged" msprop:Generator_RowEvArgName="dt_municipioRowChangeEvent" msprop:Generator_RowClassName="dt_municipioRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idmunicipio" msprop:Generator_ColumnVarNameInTable="columnidmunicipio" msprop:Generator_ColumnPropNameInRow="idmunicipio" msprop:Generator_ColumnPropNameInTable="idmunicipioColumn" msprop:Generator_UserColumnName="idmunicipio" type="xs:string" minOccurs="0" />
@@ -35,7 +35,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="barrio" msprop:Generator_TableClassName="barrioDataTable" msprop:Generator_TableVarName="tablebarrio" msprop:Generator_RowChangedName="barrioRowChanged" msprop:Generator_TablePropName="barrio" msprop:Generator_RowDeletingName="barrioRowDeleting" msprop:Generator_RowChangingName="barrioRowChanging" msprop:Generator_RowEvHandlerName="barrioRowChangeEventHandler" msprop:Generator_RowDeletedName="barrioRowDeleted" msprop:Generator_RowClassName="barrioRow" msprop:Generator_UserTableName="barrio" msprop:Generator_RowEvArgName="barrioRowChangeEvent">
+        <xs:element name="barrio" msprop:Generator_TableClassName="barrioDataTable" msprop:Generator_TableVarName="tablebarrio" msprop:Generator_TablePropName="barrio" msprop:Generator_RowDeletingName="barrioRowDeleting" msprop:Generator_RowChangingName="barrioRowChanging" msprop:Generator_RowEvHandlerName="barrioRowChangeEventHandler" msprop:Generator_RowDeletedName="barrioRowDeleted" msprop:Generator_UserTableName="barrio" msprop:Generator_RowChangedName="barrioRowChanged" msprop:Generator_RowEvArgName="barrioRowChangeEvent" msprop:Generator_RowClassName="barrioRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idbarrio" msprop:Generator_ColumnVarNameInTable="columnidbarrio" msprop:Generator_ColumnPropNameInRow="idbarrio" msprop:Generator_ColumnPropNameInTable="idbarrioColumn" msprop:Generator_UserColumnName="idbarrio" type="xs:string" minOccurs="0" />
@@ -47,7 +47,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="dt_urbanizacion" msprop:Generator_TableClassName="dt_urbanizacionDataTable" msprop:Generator_TableVarName="tabledt_urbanizacion" msprop:Generator_TablePropName="dt_urbanizacion" msprop:Generator_RowDeletingName="dt_urbanizacionRowDeleting" msprop:Generator_RowChangingName="dt_urbanizacionRowChanging" msprop:Generator_RowEvHandlerName="dt_urbanizacionRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_urbanizacionRowDeleted" msprop:Generator_UserTableName="dt_urbanizacion" msprop:Generator_RowChangedName="dt_urbanizacionRowChanged" msprop:Generator_RowEvArgName="dt_urbanizacionRowChangeEvent" msprop:Generator_RowClassName="dt_urbanizacionRow">
+        <xs:element name="dt_urbanizacion" msprop:Generator_TableClassName="dt_urbanizacionDataTable" msprop:Generator_TableVarName="tabledt_urbanizacion" msprop:Generator_RowChangedName="dt_urbanizacionRowChanged" msprop:Generator_TablePropName="dt_urbanizacion" msprop:Generator_RowDeletingName="dt_urbanizacionRowDeleting" msprop:Generator_RowChangingName="dt_urbanizacionRowChanging" msprop:Generator_RowEvHandlerName="dt_urbanizacionRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_urbanizacionRowDeleted" msprop:Generator_RowClassName="dt_urbanizacionRow" msprop:Generator_UserTableName="dt_urbanizacion" msprop:Generator_RowEvArgName="dt_urbanizacionRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idurbanizacion" msprop:Generator_ColumnVarNameInTable="columnidurbanizacion" msprop:Generator_ColumnPropNameInRow="idurbanizacion" msprop:Generator_ColumnPropNameInTable="idurbanizacionColumn" msprop:Generator_UserColumnName="idurbanizacion" type="xs:string" minOccurs="0" />
@@ -59,7 +59,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="dt_distrito_municipal" msprop:Generator_TableClassName="dt_distrito_municipalDataTable" msprop:Generator_TableVarName="tabledt_distrito_municipal" msprop:Generator_TablePropName="dt_distrito_municipal" msprop:Generator_RowDeletingName="dt_distrito_municipalRowDeleting" msprop:Generator_RowChangingName="dt_distrito_municipalRowChanging" msprop:Generator_RowEvHandlerName="dt_distrito_municipalRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_distrito_municipalRowDeleted" msprop:Generator_UserTableName="dt_distrito_municipal" msprop:Generator_RowChangedName="dt_distrito_municipalRowChanged" msprop:Generator_RowEvArgName="dt_distrito_municipalRowChangeEvent" msprop:Generator_RowClassName="dt_distrito_municipalRow">
+        <xs:element name="dt_distrito_municipal" msprop:Generator_TableClassName="dt_distrito_municipalDataTable" msprop:Generator_TableVarName="tabledt_distrito_municipal" msprop:Generator_RowChangedName="dt_distrito_municipalRowChanged" msprop:Generator_TablePropName="dt_distrito_municipal" msprop:Generator_RowDeletingName="dt_distrito_municipalRowDeleting" msprop:Generator_RowChangingName="dt_distrito_municipalRowChanging" msprop:Generator_RowEvHandlerName="dt_distrito_municipalRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_distrito_municipalRowDeleted" msprop:Generator_RowClassName="dt_distrito_municipalRow" msprop:Generator_UserTableName="dt_distrito_municipal" msprop:Generator_RowEvArgName="dt_distrito_municipalRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="iddistritomunicipal" msdata:Caption="idmunicipio" msprop:Generator_ColumnVarNameInTable="columniddistritomunicipal" msprop:Generator_ColumnPropNameInRow="iddistritomunicipal" msprop:Generator_ColumnPropNameInTable="iddistritomunicipalColumn" msprop:Generator_UserColumnName="iddistritomunicipal" type="xs:string" minOccurs="0" />
@@ -68,6 +68,18 @@
               <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
               <xs:element name="punto_cardinal" msprop:Generator_ColumnVarNameInTable="columnpunto_cardinal" msprop:Generator_ColumnPropNameInRow="punto_cardinal" msprop:Generator_ColumnPropNameInTable="punto_cardinalColumn" msprop:Generator_UserColumnName="punto_cardinal" type="xs:string" minOccurs="0" />
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dt_seccion_dm" msprop:Generator_TableClassName="dt_seccion_dmDataTable" msprop:Generator_TableVarName="tabledt_seccion_dm" msprop:Generator_RowChangedName="dt_seccion_dmRowChanged" msprop:Generator_TablePropName="dt_seccion_dm" msprop:Generator_RowDeletingName="dt_seccion_dmRowDeleting" msprop:Generator_RowChangingName="dt_seccion_dmRowChanging" msprop:Generator_RowEvHandlerName="dt_seccion_dmRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_seccion_dmRowDeleted" msprop:Generator_RowClassName="dt_seccion_dmRow" msprop:Generator_UserTableName="dt_seccion_dm" msprop:Generator_RowEvArgName="dt_seccion_dmRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idseccion_dm" msdata:Caption="idbarrio" msprop:Generator_ColumnVarNameInTable="columnidseccion_dm" msprop:Generator_ColumnPropNameInRow="idseccion_dm" msprop:Generator_ColumnPropNameInTable="idseccion_dmColumn" msprop:Generator_UserColumnName="idseccion_dm" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="poblacion" msprop:Generator_ColumnVarNameInTable="columnpoblacion" msprop:Generator_ColumnPropNameInRow="poblacion" msprop:Generator_ColumnPropNameInTable="poblacionColumn" msprop:Generator_UserColumnName="poblacion" type="xs:string" minOccurs="0" />
+              <xs:element name="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnPropNameInTable="areaColumn" msprop:Generator_UserColumnName="area" type="xs:string" minOccurs="0" />
+              <xs:element name="punto_cardinal" msprop:Generator_ColumnVarNameInTable="columnpunto_cardinal" msprop:Generator_ColumnPropNameInRow="punto_cardinal" msprop:Generator_ColumnPropNameInTable="punto_cardinalColumn" msprop:Generator_UserColumnName="punto_cardinal" type="xs:string" minOccurs="0" />
+              <xs:element name="iddistrito" msdata:Caption="idmunicipio" msprop:Generator_ColumnVarNameInTable="columniddistrito" msprop:Generator_ColumnPropNameInRow="iddistrito" msprop:Generator_ColumnPropNameInTable="iddistritoColumn" msprop:Generator_UserColumnName="iddistrito" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

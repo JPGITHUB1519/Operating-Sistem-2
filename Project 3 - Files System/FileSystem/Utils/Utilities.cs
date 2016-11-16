@@ -15,6 +15,7 @@ namespace Utils
         public static string barrio_dir = "file_barrio.txt";
         public static string urbanizacion_dir = "file_urbanizacion.txt";
         public static string distrito_municipal_dir = "file_distrito_municipal.txt";
+        public static string seccion_dm_dir = "file_seccion_dm.txt";
         public static List<string> readFileByList(string dir)
         {
             int counter = 0;

@@ -42,5 +42,10 @@ namespace FileSystem
         {
             Utilities.deleteFromFileById(Utilities.provincia_dir, Convert.ToInt32(txtcodigo.Text));
         }
+
+        private void frmMantProvincia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,3 @@
+idseccion_dm,iddistrito,nombre,poblacion,location,punto_cardinal
+1,1,SecTest,5000,50,Norte
+2,1,anacahuita,5000,50,Norte

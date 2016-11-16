@@ -1,6 +1,6 @@
 ﻿namespace FileSystem
 {
-    partial class frmMantProvincia
+    partial class FrmMantSeccionDm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cmddistrito_municipal = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabpmantenimiento = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtpunto_cardinal = new System.Windows.Forms.TextBox();
             this.txtarea = new System.Windows.Forms.TextBox();
-            this.txtlocalizacion = new System.Windows.Forms.TextBox();
+            this.txtpoblacion = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,14 +57,22 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // cmddistrito_municipal
+            // 
+            this.cmddistrito_municipal.FormattingEnabled = true;
+            this.cmddistrito_municipal.Location = new System.Drawing.Point(320, 83);
+            this.cmddistrito_municipal.Name = "cmddistrito_municipal";
+            this.cmddistrito_municipal.Size = new System.Drawing.Size(194, 21);
+            this.cmddistrito_municipal.TabIndex = 117;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabpmantenimiento);
-            this.tabControl1.Location = new System.Drawing.Point(25, 98);
+            this.tabControl1.Location = new System.Drawing.Point(55, 82);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(772, 587);
-            this.tabControl1.TabIndex = 47;
+            this.tabControl1.TabIndex = 53;
             // 
             // tabpmantenimiento
             // 
@@ -92,10 +102,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmddistrito_municipal);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtpunto_cardinal);
             this.groupBox1.Controls.Add(this.txtarea);
-            this.groupBox1.Controls.Add(this.txtlocalizacion);
+            this.groupBox1.Controls.Add(this.txtpoblacion);
             this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.txtcodigo);
             this.groupBox1.Controls.Add(this.label6);
@@ -108,13 +120,23 @@
             this.groupBox1.Size = new System.Drawing.Size(737, 322);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mantenimiento de Provincias";
+            this.groupBox1.Text = "Mantenimiento de Barrios";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(150, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 20);
+            this.label1.TabIndex = 116;
+            this.label1.Text = "Distrito Municipal";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(166, 250);
+            this.label2.Location = new System.Drawing.Point(172, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 20);
             this.label2.TabIndex = 115;
@@ -122,28 +144,28 @@
             // 
             // txtpunto_cardinal
             // 
-            this.txtpunto_cardinal.Location = new System.Drawing.Point(320, 252);
+            this.txtpunto_cardinal.Location = new System.Drawing.Point(326, 281);
             this.txtpunto_cardinal.Name = "txtpunto_cardinal";
             this.txtpunto_cardinal.Size = new System.Drawing.Size(188, 20);
             this.txtpunto_cardinal.TabIndex = 114;
             // 
             // txtarea
             // 
-            this.txtarea.Location = new System.Drawing.Point(320, 201);
+            this.txtarea.Location = new System.Drawing.Point(326, 230);
             this.txtarea.Name = "txtarea";
             this.txtarea.Size = new System.Drawing.Size(188, 20);
             this.txtarea.TabIndex = 113;
             // 
-            // txtlocalizacion
+            // txtpoblacion
             // 
-            this.txtlocalizacion.Location = new System.Drawing.Point(320, 147);
-            this.txtlocalizacion.Name = "txtlocalizacion";
-            this.txtlocalizacion.Size = new System.Drawing.Size(188, 20);
-            this.txtlocalizacion.TabIndex = 112;
+            this.txtpoblacion.Location = new System.Drawing.Point(326, 176);
+            this.txtpoblacion.Name = "txtpoblacion";
+            this.txtpoblacion.Size = new System.Drawing.Size(188, 20);
+            this.txtpoblacion.TabIndex = 112;
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(320, 96);
+            this.txtnombre.Location = new System.Drawing.Point(326, 125);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(188, 20);
             this.txtnombre.TabIndex = 111;
@@ -168,7 +190,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(236, 199);
+            this.label4.Location = new System.Drawing.Point(242, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 20);
             this.label4.TabIndex = 106;
@@ -178,7 +200,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(214, 94);
+            this.label7.Location = new System.Drawing.Point(220, 123);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 105;
@@ -188,11 +210,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(183, 147);
+            this.label5.Location = new System.Drawing.Point(201, 176);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 104;
-            this.label5.Text = "Localizacion";
+            this.label5.Text = "Poblacion";
             // 
             // label3
             // 
@@ -209,11 +231,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(248, 38);
+            this.label8.Location = new System.Drawing.Point(278, 22);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(349, 29);
-            this.label8.TabIndex = 48;
-            this.label8.Text = "Mantenimiento de Provincias";
+            this.label8.Size = new System.Drawing.Size(368, 29);
+            this.label8.TabIndex = 54;
+            this.label8.Text = "Mantenimiento de Seccion DM";
             // 
             // btnbuscar
             // 
@@ -263,16 +285,16 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // frmMantProvincia
+            // FrmMantSeccionDm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 716);
-            this.Controls.Add(this.label8);
+            this.ClientSize = new System.Drawing.Size(883, 691);
             this.Controls.Add(this.tabControl1);
-            this.Name = "frmMantProvincia";
-            this.Text = "frmMantProvincia";
-            this.Load += new System.EventHandler(this.frmMantProvincia_Load);
+            this.Controls.Add(this.label8);
+            this.Name = "FrmMantSeccionDm";
+            this.Text = "FrmMantSeccionDm";
+            this.Load += new System.EventHandler(this.FrmMantSeccionDm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabpmantenimiento.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -285,6 +307,7 @@
 
         #endregion
 
+        private System.Windows.Forms.ComboBox cmddistrito_municipal;
         public System.Windows.Forms.TabControl tabControl1;
         public System.Windows.Forms.TabPage tabpmantenimiento;
         public System.Windows.Forms.GroupBox groupBox2;
@@ -294,10 +317,11 @@
         public System.Windows.Forms.Button btncancelar;
         public System.Windows.Forms.Button btnNuevo;
         public System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtpunto_cardinal;
         private System.Windows.Forms.TextBox txtarea;
-        private System.Windows.Forms.TextBox txtlocalizacion;
+        private System.Windows.Forms.TextBox txtpoblacion;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtcodigo;
         public System.Windows.Forms.Label label6;
@@ -306,5 +330,6 @@
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label8;
+
     }
 }

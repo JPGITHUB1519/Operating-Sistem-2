@@ -13,6 +13,8 @@ namespace Utils
         public static string provincia_dir = "file.txt";
         public static string municipio_dir = "file_municipio.txt";
         public static string barrio_dir = "file_barrio.txt";
+        public static string urbanizacion_dir = "file_urbanizacion.txt";
+        public static string distrito_municipal_dir = "file_distrito_municipal.txt";
         public static List<string> readFileByList(string dir)
         {
             int counter = 0;

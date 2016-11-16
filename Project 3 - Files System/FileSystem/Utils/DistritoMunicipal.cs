@@ -49,5 +49,13 @@ namespace Utils
             get { return idprovincia; }
             set { idprovincia = value; }
         }
+
+        public void insertarDistritoMunicipal(DistritoMunicipal dist)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.distrito_municipal_dir;
+            string data = dist.iddistrito.ToString() + sep + dist.Idprovincia + sep + dist.Nombre + sep + dist.Localizacion + sep + dist.Area.ToString() + sep + dist.Punto_cardinal;
+            Utilities.writeSingleLineToFile(dir, data);
+        }
     }
 }

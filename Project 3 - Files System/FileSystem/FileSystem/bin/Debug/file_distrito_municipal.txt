@@ -1,0 +1,3 @@
+iddistritomunicipal,idprovincia,nombre,location,area,punto_cardinal
+1,1,Tester,Testerr,500,Norte
+2,1,Tester2,Testerr2,400,Sur

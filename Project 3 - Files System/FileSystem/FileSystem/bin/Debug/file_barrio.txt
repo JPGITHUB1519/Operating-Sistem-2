@@ -2,3 +2,4 @@ idbarrio,idmunicipio,nombre,poblacion,area,punto_cardinal
 1,1,1barrio,500000,5050,barrio este
 2,4,1barrio,200000,2020,barrio oeste
 2,2,casa,500000,500,casa
+2,4,Los cayados,500000,20005,Este

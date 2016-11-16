@@ -51,5 +51,13 @@ namespace Utils
             get { return idmunicipio; }
             set { idmunicipio = value; }
         }
+
+        public void insertarUrbanizacion(Urbanizacion urb)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.urbanizacion_dir;
+            string data = (urb.idurbanizacion.ToString() + sep + urb.idmunicipio.ToString() + sep + urb.nombre + sep + urb.poblacion + sep + urb.area + sep + urb.punto_cardinal);
+            Utilities.writeSingleLineToFile(dir, data);
+        }
     }
 }

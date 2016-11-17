@@ -18,6 +18,7 @@ namespace Utils
         public static string seccion_dm_dir = "file_seccion_dm.txt";
         public static string barrio_dm_dir = "file_barrio_dm.txt";
         public static string urbanizacion_dm_dir = "file_urbanizacion_dm.txt";
+        public static string persona_dir = "file_persona.txt";
         public static List<string> readFileByList(string dir)
         {
             int counter = 0;

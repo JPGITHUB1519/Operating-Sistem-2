@@ -27,3 +27,5 @@ C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files S
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsBarrioDM.resources
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmMantUrbanizacionDM.resources
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsUrbanizacionDM.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmMantPersonas.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsPersona.resources

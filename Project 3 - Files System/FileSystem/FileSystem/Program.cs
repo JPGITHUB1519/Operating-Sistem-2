@@ -15,7 +15,7 @@ namespace FileSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMantUrbanizacionDM());
+            Application.Run(new FrmMantPersonas());
         }
     }
 }

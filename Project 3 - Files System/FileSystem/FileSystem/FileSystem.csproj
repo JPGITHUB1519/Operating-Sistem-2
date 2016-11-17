@@ -80,6 +80,12 @@
     <Compile Include="FrmConsMunicipio.Designer.cs">
       <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsPersona.Designer.cs">
+      <DependentUpon>FrmConsPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsProvincia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="frmMantMunicipio.Designer.cs">
       <DependentUpon>frmMantMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantPersonas.Designer.cs">
+      <DependentUpon>FrmMantPersonas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMantProvincia.cs">
       <SubType>Form</SubType>
@@ -178,6 +190,9 @@
     <EmbeddedResource Include="FrmConsMunicipio.resx">
       <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsPersona.resx">
+      <DependentUpon>FrmConsPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsProvincia.resx">
       <DependentUpon>FrmConsProvincia.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantMunicipio.resx">
       <DependentUpon>frmMantMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantPersonas.resx">
+      <DependentUpon>FrmMantPersonas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantProvincia.resx">
       <DependentUpon>frmMantProvincia.cs</DependentUpon>
@@ -234,6 +252,7 @@
     <EmbeddedResource Include="reporte_barrio_dm.rdlc" />
     <EmbeddedResource Include="reporte_distrito_municipal.rdlc" />
     <EmbeddedResource Include="reporte_municipio.rdlc" />
+    <EmbeddedResource Include="reporte_persona.rdlc" />
     <EmbeddedResource Include="reporte_provincia.rdlc" />
     <EmbeddedResource Include="reporte_urbanizacion.rdlc" />
     <EmbeddedResource Include="reporte_seccion_dm.rdlc" />

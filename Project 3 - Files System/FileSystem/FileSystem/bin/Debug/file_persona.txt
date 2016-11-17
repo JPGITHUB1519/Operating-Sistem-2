@@ -1,0 +1,2 @@
+idpersona,nombre,apellido,sexo,fecha_nacimiento,estado_civil,ocupacion,idbarrio,idurbanizacion,idseccion_dm,idbarrio_dm,idurbanizacion_dm,iddistrito_municipal,isvivo
+1,Jean,Ureña,M,17/11/2016,Soltero/a,Informatico,1,1,1,1,1,1,False

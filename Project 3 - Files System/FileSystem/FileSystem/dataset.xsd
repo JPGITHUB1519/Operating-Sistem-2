@@ -107,6 +107,26 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="dt_persona" msprop:Generator_TableClassName="dt_personaDataTable" msprop:Generator_TableVarName="tabledt_persona" msprop:Generator_TablePropName="dt_persona" msprop:Generator_RowDeletingName="dt_personaRowDeleting" msprop:Generator_RowChangingName="dt_personaRowChanging" msprop:Generator_RowEvHandlerName="dt_personaRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_personaRowDeleted" msprop:Generator_UserTableName="dt_persona" msprop:Generator_RowChangedName="dt_personaRowChanged" msprop:Generator_RowEvArgName="dt_personaRowChangeEvent" msprop:Generator_RowClassName="dt_personaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idpersona" msprop:Generator_ColumnVarNameInTable="columnidpersona" msprop:Generator_ColumnPropNameInRow="idpersona" msprop:Generator_ColumnPropNameInTable="idpersonaColumn" msprop:Generator_UserColumnName="idpersona" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn" msprop:Generator_UserColumnName="apellido" type="xs:string" minOccurs="0" />
+              <xs:element name="sexo" msprop:Generator_ColumnVarNameInTable="columnsexo" msprop:Generator_ColumnPropNameInRow="sexo" msprop:Generator_ColumnPropNameInTable="sexoColumn" msprop:Generator_UserColumnName="sexo" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_nacimiento" msprop:Generator_ColumnVarNameInTable="columnfecha_nacimiento" msprop:Generator_ColumnPropNameInRow="fecha_nacimiento" msprop:Generator_ColumnPropNameInTable="fecha_nacimientoColumn" msprop:Generator_UserColumnName="fecha_nacimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="estado_civil" msprop:Generator_ColumnVarNameInTable="columnestado_civil" msprop:Generator_ColumnPropNameInRow="estado_civil" msprop:Generator_ColumnPropNameInTable="estado_civilColumn" msprop:Generator_UserColumnName="estado_civil" type="xs:string" minOccurs="0" />
+              <xs:element name="ocupacion" msprop:Generator_ColumnVarNameInTable="columnocupacion" msprop:Generator_ColumnPropNameInRow="ocupacion" msprop:Generator_ColumnPropNameInTable="ocupacionColumn" msprop:Generator_UserColumnName="ocupacion" type="xs:string" minOccurs="0" />
+              <xs:element name="idbarrio" msprop:Generator_ColumnVarNameInTable="columnidbarrio" msprop:Generator_ColumnPropNameInRow="idbarrio" msprop:Generator_ColumnPropNameInTable="idbarrioColumn" msprop:Generator_UserColumnName="idbarrio" type="xs:string" minOccurs="0" />
+              <xs:element name="idurbanizacion" msprop:Generator_ColumnVarNameInTable="columnidurbanizacion" msprop:Generator_ColumnPropNameInRow="idurbanizacion" msprop:Generator_ColumnPropNameInTable="idurbanizacionColumn" msprop:Generator_UserColumnName="idurbanizacion" type="xs:string" minOccurs="0" />
+              <xs:element name="idseccion_dm" msprop:Generator_ColumnVarNameInTable="columnidseccion_dm" msprop:Generator_ColumnPropNameInRow="idseccion_dm" msprop:Generator_ColumnPropNameInTable="idseccion_dmColumn" msprop:Generator_UserColumnName="idseccion_dm" type="xs:string" minOccurs="0" />
+              <xs:element name="idbarrio_dm" msprop:Generator_ColumnVarNameInTable="columnidbarrio_dm" msprop:Generator_ColumnPropNameInRow="idbarrio_dm" msprop:Generator_ColumnPropNameInTable="idbarrio_dmColumn" msprop:Generator_UserColumnName="idbarrio_dm" type="xs:string" minOccurs="0" />
+              <xs:element name="idurbanizacion_dm" msprop:Generator_ColumnVarNameInTable="columnidurbanizacion_dm" msprop:Generator_ColumnPropNameInRow="idurbanizacion_dm" msprop:Generator_ColumnPropNameInTable="idurbanizacion_dmColumn" msprop:Generator_UserColumnName="idurbanizacion_dm" type="xs:string" minOccurs="0" />
+              <xs:element name="iddistrito_municipal" msprop:Generator_ColumnVarNameInTable="columniddistrito_municipal" msprop:Generator_ColumnPropNameInRow="iddistrito_municipal" msprop:Generator_ColumnPropNameInTable="iddistrito_municipalColumn" msprop:Generator_UserColumnName="iddistrito_municipal" type="xs:string" minOccurs="0" />
+              <xs:element name="isvivo" msprop:Generator_ColumnVarNameInTable="columnisvivo" msprop:Generator_ColumnPropNameInRow="isvivo" msprop:Generator_ColumnPropNameInTable="isvivoColumn" msprop:Generator_UserColumnName="isvivo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

@@ -10,7 +10,7 @@ namespace Utils
     public class Utilities
     {
         public static char sep = ',';
-        public static string provincia_dir = "file.txt";
+        public static string provincia_dir = "file_provincia.txt";
         public static string municipio_dir = "file_municipio.txt";
         public static string barrio_dir = "file_barrio.txt";
         public static string urbanizacion_dir = "file_urbanizacion.txt";

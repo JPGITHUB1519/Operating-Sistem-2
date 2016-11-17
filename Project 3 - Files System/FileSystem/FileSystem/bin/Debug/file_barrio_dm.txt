@@ -1,3 +1,4 @@
 idbarrio_dm,iddistrito,nombre,poblacion,area,punto_cardinal
-1,1,BARRIO DM TESTER,100,1000,Norte Barrio DM
-2,1,BARRIO NO Testing,100,1000,Norte Barrio DM
+701,301,barriod dm1,60,9,norte
+702,302,barrio dm2,34,62,Norte
+703,303,barrio dm3,14,5,suroeste

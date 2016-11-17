@@ -27,7 +27,7 @@ namespace FileSystem
         private void FrmConsProvincia_Load(object sender, EventArgs e)
         {
             
-            this.dt = Utilities.fileToDataTable(Utilities.municipio_dir);
+            this.dt = Utilities.fileToDataTable(Utilities.provincia_dir);
             this.aux_dt = this.dt;
             this.dataGridView1.DataSource = dt;
             

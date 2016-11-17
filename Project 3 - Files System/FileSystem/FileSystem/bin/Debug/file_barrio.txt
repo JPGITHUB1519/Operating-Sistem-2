@@ -1,5 +1,4 @@
 idbarrio,idmunicipio,nombre,poblacion,area,punto_cardinal
-1,1,1barrio,500000,5050,barrio este
-2,4,1barrio,200000,2020,barrio oeste
-2,2,casa,500000,500,casa
-2,4,Los cayados,500000,20005,Este
+401,201,los coquitos,50000,15,Este
+402,202,los polanco,1500,20,norte
+403,203,valenzuela,2500,50,este

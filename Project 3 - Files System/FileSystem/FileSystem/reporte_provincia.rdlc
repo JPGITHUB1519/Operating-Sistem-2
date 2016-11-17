@@ -70,7 +70,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.18414in</Height>
+              <Height>0.37164in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -403,8 +403,8 @@
         <DataSetName>dataset</DataSetName>
         <Top>3.80153cm</Top>
         <Left>1.73778cm</Left>
-        <Height>6.01542cm</Height>
-        <Width>18.63833cm</Width>
+        <Height>3.95168cm</Height>
+        <Width>18.63837cm</Width>
         <Style>
           <Border>
             <Style>None</Style>

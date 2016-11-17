@@ -1,4 +1,4 @@
 idseccion_dm,iddistrito,nombre,poblacion,area,punto_cardinal
-1,1,SecTest,5000,50,Norte
-2,1,anacahuita,5000,50,Norte
-1,1,Seccion DM TEST,500000,2020,Este
+601,301,sector 1,150,23,este
+602,302,sector 2,931,16,oeste
+603,303,sector 3,250,8,norte

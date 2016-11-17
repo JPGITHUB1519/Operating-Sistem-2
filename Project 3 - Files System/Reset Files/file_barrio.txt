@@ -1,0 +1,1 @@
+idbarrio,idmunicipio,nombre,poblacion,area,punto_cardinal

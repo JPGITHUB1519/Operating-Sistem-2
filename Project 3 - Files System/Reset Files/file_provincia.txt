@@ -1,0 +1,1 @@
+idprovincia,nombre,location,area,punto_cardinal

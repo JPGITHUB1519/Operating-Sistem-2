@@ -1,3 +1,4 @@
-iddistritomunicipal,idprovincia,nombre,location,area,punto_cardinal
-1,1,Tester,Testerr,500,Norte
-2,1,Tester2,Testerr2,400,Sur
+﻿iddistritomunicipal,idprovincia,nombre,location,area,punto_cardinal
+301,101,la caleta,18°27′50″N 69°40′50″O,98,este
+302,102,canca,19°24′N 70°48′O,30,norte
+303,103,Tireo,7°40′00″N 36°50′00″E,35,norte

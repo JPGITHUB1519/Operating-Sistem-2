@@ -31,7 +31,14 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabpmantenimiento = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.btncancelar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbprovincia = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtpunto_cardinal = new System.Windows.Forms.TextBox();
             this.txtarea = new System.Windows.Forms.TextBox();
@@ -44,13 +51,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbprovincia = new System.Windows.Forms.ComboBox();
-            this.btnbuscar = new System.Windows.Forms.Button();
-            this.btneliminar = new System.Windows.Forms.Button();
-            this.btnsalir = new System.Windows.Forms.Button();
-            this.btncancelar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabpmantenimiento.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -93,6 +93,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones";
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Image = global::FileSystem.Properties.Resources.search;
+            this.btnbuscar.Location = new System.Drawing.Point(239, 19);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(106, 72);
+            this.btnbuscar.TabIndex = 9;
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // btneliminar
+            // 
+            this.btneliminar.Image = global::FileSystem.Properties.Resources.delete;
+            this.btneliminar.Location = new System.Drawing.Point(127, 19);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(106, 72);
+            this.btneliminar.TabIndex = 8;
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.Image = global::FileSystem.Properties.Resources.User_Interface_Login_icon;
+            this.btnsalir.Location = new System.Drawing.Point(463, 19);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(106, 72);
+            this.btnsalir.TabIndex = 11;
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // btncancelar
+            // 
+            this.btncancelar.Image = global::FileSystem.Properties.Resources.Undo_icon;
+            this.btncancelar.Location = new System.Drawing.Point(351, 19);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(106, 72);
+            this.btncancelar.TabIndex = 10;
+            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = global::FileSystem.Properties.Resources.save;
+            this.btnNuevo.Location = new System.Drawing.Point(15, 19);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(106, 72);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cmbprovincia);
@@ -114,6 +164,24 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mantenimiento de Municipios";
+            // 
+            // cmbprovincia
+            // 
+            this.cmbprovincia.FormattingEnabled = true;
+            this.cmbprovincia.Location = new System.Drawing.Point(320, 83);
+            this.cmbprovincia.Name = "cmbprovincia";
+            this.cmbprovincia.Size = new System.Drawing.Size(194, 21);
+            this.cmbprovincia.TabIndex = 117;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(220, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.TabIndex = 116;
+            this.label1.Text = "Provincia";
             // 
             // label2
             // 
@@ -219,72 +287,6 @@
             this.label8.Size = new System.Drawing.Size(354, 29);
             this.label8.TabIndex = 50;
             this.label8.Text = "Mantenimiento de Municipios";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(220, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
-            this.label1.TabIndex = 116;
-            this.label1.Text = "Provincia";
-            // 
-            // cmbprovincia
-            // 
-            this.cmbprovincia.FormattingEnabled = true;
-            this.cmbprovincia.Location = new System.Drawing.Point(320, 83);
-            this.cmbprovincia.Name = "cmbprovincia";
-            this.cmbprovincia.Size = new System.Drawing.Size(194, 21);
-            this.cmbprovincia.TabIndex = 117;
-            // 
-            // btnbuscar
-            // 
-            this.btnbuscar.Image = global::FileSystem.Properties.Resources.search;
-            this.btnbuscar.Location = new System.Drawing.Point(239, 19);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(106, 72);
-            this.btnbuscar.TabIndex = 9;
-            this.btnbuscar.UseVisualStyleBackColor = true;
-            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
-            // 
-            // btneliminar
-            // 
-            this.btneliminar.Image = global::FileSystem.Properties.Resources.delete;
-            this.btneliminar.Location = new System.Drawing.Point(127, 19);
-            this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(106, 72);
-            this.btneliminar.TabIndex = 8;
-            this.btneliminar.UseVisualStyleBackColor = true;
-            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
-            // 
-            // btnsalir
-            // 
-            this.btnsalir.Image = global::FileSystem.Properties.Resources.User_Interface_Login_icon;
-            this.btnsalir.Location = new System.Drawing.Point(463, 19);
-            this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(106, 72);
-            this.btnsalir.TabIndex = 11;
-            this.btnsalir.UseVisualStyleBackColor = true;
-            // 
-            // btncancelar
-            // 
-            this.btncancelar.Image = global::FileSystem.Properties.Resources.Undo_icon;
-            this.btncancelar.Location = new System.Drawing.Point(351, 19);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(106, 72);
-            this.btncancelar.TabIndex = 10;
-            this.btncancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = global::FileSystem.Properties.Resources.save;
-            this.btnNuevo.Location = new System.Drawing.Point(15, 19);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(106, 72);
-            this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // frmMantMunicipio
             // 

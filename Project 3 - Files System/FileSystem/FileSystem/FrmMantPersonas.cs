@@ -23,6 +23,24 @@ namespace FileSystem
             InitializeComponent();
         }
 
+        public void limpiar_campos()
+        {
+            this.txtcodigo.Text = string.Empty;
+            this.txtnombre.Text = string.Empty;
+            this.txtapellido.Text = string.Empty;
+            this.cmbsexo.ResetText();
+            this.dtfecha.ResetText();
+            this.cmbestadocivil.ResetText();
+            this.txtocupacion.Text = string.Empty;
+            this.cmbbarrio.ResetText();
+            this.cmburbanizacion.ResetText();
+            this.cmbsecciondm.ResetText();
+            this.cmbbarriodm.ResetText();
+            this.cmburbanizaciondm.ResetText();
+            this.cmbdistritomunicipal.ResetText();
+            this.chkvivo.Checked = true;
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             char sep = Utils.Utilities.sep;
@@ -45,12 +63,14 @@ namespace FileSystem
             pe.Is_vivo = chkvivo.Checked;
             pe.insertarPersona(pe);
             MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            limpiar_campos();
 
         }
 
         private void FrmMantPersonas_Load(object sender, EventArgs e)
         {
+            // putting as true chkvivo
+            this.chkvivo.Checked = true;
             // filling combo box barrio
             lista_barrio = Utilities.readIdsFromFile(Utilities.barrio_dir);
             foreach (string id in lista_barrio)
@@ -97,12 +117,28 @@ namespace FileSystem
         private void btneliminar_Click(object sender, EventArgs e)
         {
             Utilities.deleteFromFileById(Utilities.persona_dir, Convert.ToInt32(txtcodigo.Text));
+            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             FrmConsPersona con_per = new FrmConsPersona();
             con_per.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.limpiar_campos();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

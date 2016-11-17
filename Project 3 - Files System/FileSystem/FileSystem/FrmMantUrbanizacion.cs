@@ -18,6 +18,17 @@ namespace FileSystem
             InitializeComponent();
         }
 
+        public void limpiar_campos()
+        {
+            this.txtcodigo.Text = string.Empty;
+            this.cmbmunicipio.ResetText();
+            this.txtnombre.Text = string.Empty;
+            this.txtpoblacion.Text = string.Empty;
+            this.txtarea.Text = string.Empty;
+            this.txtpunto_cardinal.Text = string.Empty;
+            this.txtcodigo.Focus();
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             char sep = Utils.Utilities.sep;
@@ -32,6 +43,7 @@ namespace FileSystem
             urb.Idmunicipio = Convert.ToInt32(cmbmunicipio.Text);
             urb.insertarUrbanizacion(urb);
             MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_campos();
         }
 
         private void FrmMantUrbanizacion_Load(object sender, EventArgs e)
@@ -48,12 +60,23 @@ namespace FileSystem
         private void btneliminar_Click(object sender, EventArgs e)
         {
             Utilities.deleteFromFileById(Utilities.urbanizacion_dir, Convert.ToInt32(txtcodigo.Text));
+            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             FrmConsUrbanizacion conurb = new FrmConsUrbanizacion();
             conurb.Show();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.limpiar_campos();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

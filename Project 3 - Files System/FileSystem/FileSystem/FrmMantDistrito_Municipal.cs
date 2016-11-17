@@ -18,6 +18,18 @@ namespace FileSystem
             InitializeComponent();
         }
 
+        public void limpiar_campos()
+        {
+            this.txtcodigo.Text = string.Empty;
+            this.cmbprovincia.ResetText();
+            this.txtnombre.Text = string.Empty;
+            this.txtlocalizacion.Text = string.Empty;
+            this.txtarea.Text = string.Empty;
+            this.txtpunto_cardinal.Text = string.Empty;
+            this.txtcodigo.Focus();
+        }
+
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             char sep = Utils.Utilities.sep;
@@ -32,6 +44,7 @@ namespace FileSystem
             dist.Idprovincia = Convert.ToInt32(cmbprovincia.Text);
             dist.insertarDistritoMunicipal(dist);
             MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_campos();
         }
 
         private void FrmMantDistrito_Municipal_Load(object sender, EventArgs e)
@@ -48,12 +61,23 @@ namespace FileSystem
         private void btneliminar_Click(object sender, EventArgs e)
         {
             Utilities.deleteFromFileById(Utilities.distrito_municipal_dir, Convert.ToInt32(txtcodigo.Text));
+            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             FrmConsDistrito_municipal condist = new FrmConsDistrito_municipal();
             condist.Show();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            limpiar_campos();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

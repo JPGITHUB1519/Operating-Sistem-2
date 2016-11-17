@@ -18,6 +18,17 @@ namespace FileSystem
             InitializeComponent();
         }
 
+        public void limpiar_campos()
+        {
+            this.txtcodigo.Text = string.Empty;
+            this.cmddistrito_municipal.ResetText();
+            this.txtnombre.Text = string.Empty;
+            this.txtpoblacion.Text = string.Empty;
+            this.txtarea.Text = string.Empty;
+            this.txtpunto_cardinal.Text = string.Empty;
+            this.txtcodigo.Focus();
+        }
+
         private void FrmMantUrbanizacionDM_Load(object sender, EventArgs e)
         {
             // fill combo box from provincia data
@@ -43,17 +54,29 @@ namespace FileSystem
             urb_dm.Iddistrito = Convert.ToInt32(cmddistrito_municipal.Text);
             urb_dm.insertarUrbanizacionDM(urb_dm);
             MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_campos();
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
             Utilities.deleteFromFileById(Utilities.urbanizacion_dm_dir, Convert.ToInt32(txtcodigo.Text));
+            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             FrmConsUrbanizacionDM con_urb_dm = new FrmConsUrbanizacionDM();
             con_urb_dm.Show();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.limpiar_campos();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

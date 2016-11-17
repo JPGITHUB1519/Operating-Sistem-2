@@ -265,6 +265,7 @@
             this.btnsalir.Size = new System.Drawing.Size(106, 72);
             this.btnsalir.TabIndex = 11;
             this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // btncancelar
             // 
@@ -274,6 +275,7 @@
             this.btncancelar.Size = new System.Drawing.Size(106, 72);
             this.btncancelar.TabIndex = 10;
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnNuevo
             // 

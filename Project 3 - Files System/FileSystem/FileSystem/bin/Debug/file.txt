@@ -3,3 +3,4 @@ idprovincia,nombre,location,area,punto_cardinal
 2,2,2,2,2
 3,3,3,3,3
 1,Santiago,Region Norte,2020,Norte
+3,3,3,3,3

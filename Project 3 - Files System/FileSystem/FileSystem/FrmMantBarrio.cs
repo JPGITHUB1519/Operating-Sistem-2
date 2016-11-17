@@ -17,6 +17,18 @@ namespace FileSystem
             InitializeComponent();
         }
 
+
+        public void limpiar_campos()
+        {
+            this.txtcodigo.Text = string.Empty;
+            this.cmbmunicipio.ResetText();
+            this.txtnombre.Text = string.Empty;
+            this.txtpoblacion.Text = string.Empty;
+            this.txtarea.Text = string.Empty;
+            this.txtpunto_cardinal.Text = string.Empty;
+            this.txtcodigo.Focus();
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             char sep = Utils.Utilities.sep;
@@ -31,6 +43,7 @@ namespace FileSystem
             ba.Idmunicipio = Convert.ToInt32(cmbmunicipio.Text);
             ba.insertarBarrio(ba);
             MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_campos();
         }
 
         private void FrmMantBarrio_Load(object sender, EventArgs e)
@@ -47,12 +60,23 @@ namespace FileSystem
         private void btneliminar_Click(object sender, EventArgs e)
         {
             Utilities.deleteFromFileById(Utilities.barrio_dir, Convert.ToInt32(txtcodigo.Text));
+            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             FrmConsBarrio conmun = new FrmConsBarrio();
             conmun.Show();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            limpiar_campos();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

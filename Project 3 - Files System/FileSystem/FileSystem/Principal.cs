@@ -109,5 +109,61 @@ namespace FileSystem
             doform.MdiParent = this;
             doform.Show();
         }
+
+        private void barrioDMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantSeccionDm doform = new FrmMantSeccionDm();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void municipioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMantMunicipio doform = new frmMantMunicipio();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void distritoMunicipalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantDistrito_Municipal doform = new FrmMantDistrito_Municipal();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void barrioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantBarrio doform = new FrmMantBarrio();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void urbanizacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantUrbanizacion doform = new FrmMantUrbanizacion();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void urbanizacionDMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantBarrioDM doform = new FrmMantBarrioDM();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void urbanizacionDMToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmMantUrbanizacionDM doform = new FrmMantUrbanizacionDM();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMantPersonas doform = new FrmMantPersonas();
+            doform.MdiParent = this;
+            doform.Show();
+        }
     }
 }

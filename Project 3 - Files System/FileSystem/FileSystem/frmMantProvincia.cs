@@ -17,6 +17,16 @@ namespace FileSystem
             InitializeComponent();
         }
 
+        public void limpiar_campos()
+        {
+            this.txtcodigo.Text = string.Empty;
+            this.txtnombre.Text = string.Empty;
+            this.txtlocalizacion.Text = string.Empty;
+            this.txtarea.Text = string.Empty;
+            this.txtpunto_cardinal.Text = string.Empty;
+            this.txtcodigo.Focus();
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             char sep = Utils.Utilities.sep;
@@ -30,6 +40,7 @@ namespace FileSystem
             prov.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
             prov.insertarProvincia(prov);
             MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_campos();
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -41,11 +52,22 @@ namespace FileSystem
         private void btneliminar_Click(object sender, EventArgs e)
         {
             Utilities.deleteFromFileById(Utilities.provincia_dir, Convert.ToInt32(txtcodigo.Text));
+            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void frmMantProvincia_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.limpiar_campos();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -23,3 +23,7 @@ C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files S
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsDistrito_municipal.resources
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmMantSeccionDm.resources
 C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsSeccionDm.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmMantBarrioDM.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsBarrioDM.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmMantUrbanizacionDM.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.FrmConsUrbanizacionDM.resources

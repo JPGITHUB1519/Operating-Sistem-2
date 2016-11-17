@@ -1,0 +1,3 @@
+idurbanizacion_dm,iddistrito,nombre,poblacion,area,punto_cardinal
+1,1,Urb dm,8000,80,Urb Este
+1,1,Urb2 dm2,8000,80,Urb2 Este

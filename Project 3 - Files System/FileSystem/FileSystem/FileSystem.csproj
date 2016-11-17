@@ -62,6 +62,12 @@
     <Compile Include="FrmConsBarrio.Designer.cs">
       <DependentUpon>FrmConsBarrio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsBarrioDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsBarrioDM.Designer.cs">
+      <DependentUpon>FrmConsBarrioDM.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsDistrito_municipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +98,23 @@
     <Compile Include="FrmConsUrbanizacion.Designer.cs">
       <DependentUpon>FrmConsUrbanizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConsUrbanizacionDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsUrbanizacionDM.Designer.cs">
+      <DependentUpon>FrmConsUrbanizacionDM.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMantBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMantBarrio.Designer.cs">
       <DependentUpon>FrmMantBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantBarrioDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantBarrioDM.Designer.cs">
+      <DependentUpon>FrmMantBarrioDM.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMantDistrito_Municipal.cs">
       <SubType>Form</SubType>
@@ -128,6 +146,12 @@
     <Compile Include="FrmMantUrbanizacion.Designer.cs">
       <DependentUpon>FrmMantUrbanizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMantUrbanizacionDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantUrbanizacionDM.Designer.cs">
+      <DependentUpon>FrmMantUrbanizacionDM.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmreportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +169,9 @@
     <EmbeddedResource Include="FrmConsBarrio.resx">
       <DependentUpon>FrmConsBarrio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsBarrioDM.resx">
+      <DependentUpon>FrmConsBarrioDM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmConsDistrito_municipal.resx">
       <DependentUpon>FrmConsDistrito_municipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,8 +187,14 @@
     <EmbeddedResource Include="FrmConsUrbanizacion.resx">
       <DependentUpon>FrmConsUrbanizacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsUrbanizacionDM.resx">
+      <DependentUpon>FrmConsUrbanizacionDM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMantBarrio.resx">
       <DependentUpon>FrmMantBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantBarrioDM.resx">
+      <DependentUpon>FrmMantBarrioDM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantDistrito_Municipal.resx">
       <DependentUpon>FrmMantDistrito_Municipal.cs</DependentUpon>
@@ -177,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantUrbanizacion.resx">
       <DependentUpon>FrmMantUrbanizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantUrbanizacionDM.resx">
+      <DependentUpon>FrmMantUrbanizacionDM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmreportes.resx">
       <DependentUpon>frmreportes.cs</DependentUpon>
@@ -195,11 +231,13 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="reporte_barrio.rdlc" />
+    <EmbeddedResource Include="reporte_barrio_dm.rdlc" />
     <EmbeddedResource Include="reporte_distrito_municipal.rdlc" />
     <EmbeddedResource Include="reporte_municipio.rdlc" />
     <EmbeddedResource Include="reporte_provincia.rdlc" />
     <EmbeddedResource Include="reporte_urbanizacion.rdlc" />
     <EmbeddedResource Include="reporte_seccion_dm.rdlc" />
+    <EmbeddedResource Include="reporte_urbanizacion_dm.rdlc" />
     <None Include="dataset.xsc">
       <DependentUpon>dataset.xsd</DependentUpon>
     </None>

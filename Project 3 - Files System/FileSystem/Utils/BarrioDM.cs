@@ -49,5 +49,13 @@ namespace Utils
             get { return iddistrito; }
             set { iddistrito = value; }
         }
+
+        public void insertarBarrioDM(BarrioDM ba_dm)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.barrio_dm_dir;
+            string data = (ba_dm.Idbarrio_dm.ToString() + sep + ba_dm.iddistrito.ToString() + sep + ba_dm.nombre + sep + ba_dm.poblacion + sep + ba_dm.area + sep + ba_dm.punto_cardinal);
+            Utilities.writeSingleLineToFile(dir, data);
+        }
     }
 }

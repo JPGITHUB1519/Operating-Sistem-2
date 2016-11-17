@@ -1,0 +1,3 @@
+idbarrio_dm,iddistrito,nombre,poblacion,area,punto_cardinal
+1,1,BARRIO DM TESTER,100,1000,Norte Barrio DM
+2,1,BARRIO NO Testing,100,1000,Norte Barrio DM

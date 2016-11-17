@@ -49,5 +49,14 @@ namespace Utils
             get { return iddistrito; }
             set { iddistrito = value; }
         }
+
+        public void insertarUrbanizacionDM(UrbanizacionDM urb_dm)
+        {
+            char sep = Utils.Utilities.sep;
+            string dir = Utilities.urbanizacion_dm_dir;
+            string data = (urb_dm.idurbanizacion_dm.ToString() + sep + urb_dm.iddistrito.ToString() + sep + urb_dm.nombre + sep + urb_dm.poblacion + sep + urb_dm.area + sep + urb_dm.punto_cardinal);
+            Utilities.writeSingleLineToFile(dir, data);
+        }
+        
     }
 }

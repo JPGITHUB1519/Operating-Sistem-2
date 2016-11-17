@@ -50,13 +50,19 @@ namespace Utils
             set { idprovincia = value; }
         }
 
-        public void insertarMunicipio(Municipio mun)
+        public void insertarMunicipio(Municipio mun, bool is_editar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.municipio_dir;
             string data = mun.idmunicipio.ToString() + sep + mun.Idprovincia + sep + mun.Nombre + sep + mun.Localizacion + sep + mun.Area.ToString() + sep + mun.Punto_cardinal;
-            Utilities.writeSingleLineToFile(dir, data);
+            
+            if(is_editar)
+                Utilities.updateFromFileById(dir, mun.idmunicipio, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
+
         }
+
 
     }
 }

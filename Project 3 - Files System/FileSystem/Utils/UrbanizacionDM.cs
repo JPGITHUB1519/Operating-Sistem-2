@@ -50,12 +50,15 @@ namespace Utils
             set { iddistrito = value; }
         }
 
-        public void insertarUrbanizacionDM(UrbanizacionDM urb_dm)
+        public void insertarUrbanizacionDM(UrbanizacionDM urb_dm, bool is_editar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.urbanizacion_dm_dir;
             string data = (urb_dm.idurbanizacion_dm.ToString() + sep + urb_dm.iddistrito.ToString() + sep + urb_dm.nombre + sep + urb_dm.poblacion + sep + urb_dm.area + sep + urb_dm.punto_cardinal);
-            Utilities.writeSingleLineToFile(dir, data);
+            if (is_editar)
+                Utilities.updateFromFileById(dir, urb_dm.idurbanizacion_dm, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
         }
         
     }

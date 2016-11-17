@@ -52,12 +52,15 @@ namespace Utils
             set { idmunicipio = value; }
         }
 
-        public void insertarUrbanizacion(Urbanizacion urb)
+        public void insertarUrbanizacion(Urbanizacion urb, bool is_editar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.urbanizacion_dir;
             string data = (urb.idurbanizacion.ToString() + sep + urb.idmunicipio.ToString() + sep + urb.nombre + sep + urb.poblacion + sep + urb.area + sep + urb.punto_cardinal);
-            Utilities.writeSingleLineToFile(dir, data);
+            if(is_editar)
+                Utilities.updateFromFileById(dir, urb.idurbanizacion, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
         }
     }
 }

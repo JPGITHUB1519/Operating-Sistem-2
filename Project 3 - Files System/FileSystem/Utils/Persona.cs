@@ -115,7 +115,7 @@ namespace Utils
             set { iddistrito_municipal = value; }
         }
 
-        public void insertarPersona(Persona per)
+        public void insertarPersona(Persona per, bool iseditar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.persona_dir;
@@ -133,7 +133,10 @@ namespace Utils
                    + per.idurbanizacion_dm.ToString() + sep
                    + per.iddistrito_municipal.ToString() + sep
                    + per.is_vivo.ToString();
-            Utilities.writeSingleLineToFile(dir, data);
+            if (iseditar)
+                Utilities.updateFromFileById(dir, per.idpersona, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
         }
 
 

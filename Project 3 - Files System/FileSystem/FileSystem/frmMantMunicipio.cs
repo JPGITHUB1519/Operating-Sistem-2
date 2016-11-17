@@ -40,8 +40,17 @@ namespace FileSystem
             mun.Area = float.Parse(txtarea.Text.Trim());
             mun.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
             mun.Idprovincia = Convert.ToInt32(cmbprovincia.Text);
-            mun.insertarMunicipio(mun);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // if the record exits, edit it! else create it!
+            if (Utilities.checkExitsRecordById(mun.Idmunicipio, Utilities.municipio_dir))
+            {
+                mun.insertarMunicipio(mun, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                mun.insertarMunicipio(mun);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             limpiar_campos();
         }
 

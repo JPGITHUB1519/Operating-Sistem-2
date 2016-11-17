@@ -2,4 +2,3 @@ idurbanizacion,idmunicipio,nombre,poblacion,area,punto_cardinal
 501,201,amelia,250,10,oeste
 402,202,lopizza,150,5,norte
 503,203,palermo,360,60,este
-1,202,2,2,2,2

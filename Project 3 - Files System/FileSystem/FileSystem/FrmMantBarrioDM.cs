@@ -52,8 +52,16 @@ namespace FileSystem
             ba_dm.Area = float.Parse(txtarea.Text.Trim());
             ba_dm.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
             ba_dm.Iddistrito = Convert.ToInt32(cmddistrito_municipal.Text);
-            ba_dm.insertarBarrioDM(ba_dm);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Utilities.checkExitsRecordById(ba_dm.Idbarrio_dm, Utilities.barrio_dm_dir))
+            {
+                ba_dm.insertarBarrioDM(ba_dm, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                ba_dm.insertarBarrioDM(ba_dm);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             limpiar_campos();
         }
 

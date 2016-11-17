@@ -41,8 +41,16 @@ namespace FileSystem
             ba.Area = float.Parse(txtarea.Text.Trim());
             ba.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
             ba.Idmunicipio = Convert.ToInt32(cmbmunicipio.Text);
-            ba.insertarBarrio(ba);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Utilities.checkExitsRecordById(ba.Idbarrio, Utilities.barrio_dir))
+            {
+                ba.insertarBarrio(ba, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                ba.insertarBarrio(ba);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             limpiar_campos();
         }
 

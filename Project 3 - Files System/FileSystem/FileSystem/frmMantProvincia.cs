@@ -38,8 +38,19 @@ namespace FileSystem
             prov.Localizacion = txtlocalizacion.Text.Trim();
             prov.Area = float.Parse(txtarea.Text.Trim());
             prov.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
-            prov.insertarProvincia(prov);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // if the record exits, edit it! else create it!
+            if (Utilities.checkExitsRecordById(prov.Idprovincia, Utilities.provincia_dir))
+            {
+                prov.insertarProvincia(prov, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                prov.insertarProvincia(prov);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+            
             limpiar_campos();
         }
 

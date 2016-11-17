@@ -19,6 +19,7 @@ namespace Utils
         public static string barrio_dm_dir = "file_barrio_dm.txt";
         public static string urbanizacion_dm_dir = "file_urbanizacion_dm.txt";
         public static string persona_dir = "file_persona.txt";
+
         public static List<string> readFileByList(string dir)
         {
             int counter = 0;
@@ -45,10 +46,7 @@ namespace Utils
         {
             string content = File.ReadAllText(dir);
             return content;
-        }
-
-
-        
+        }        
 
         public static void writeListToFile(string dir, List<string> lista)
         {
@@ -86,6 +84,38 @@ namespace Utils
                         if (String.Compare(id_file, id.ToString()) == 0)
                             continue;
                         writer.WriteLine(line);
+                    }
+                }
+            }
+            copy = fileToString(copy_file_name);
+            File.Delete(copy_file_name);
+            File.WriteAllText(dir, String.Empty);
+            File.WriteAllText(dir, copy);
+        }
+
+        public static void updateFromFileById(string dir, int id, string modification)
+        {
+            string line = null;
+            string line_to_delete = id.ToString();
+            string id_file;
+            string copy_file_name = "copy" + dir;
+            string copy = "";
+            using (StreamReader reader = new StreamReader(dir))
+            {
+                using (StreamWriter writer = new StreamWriter(copy_file_name))
+                {
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        id_file = line.Split(Utilities.sep)[0];
+                        if (String.Compare(id_file, id.ToString()) == 0)
+                        {
+                            writer.WriteLine(modification);
+                        }  
+                        else
+                        {
+                            writer.WriteLine(line);
+                        }
+                        
                     }
                 }
             }
@@ -133,6 +163,13 @@ namespace Utils
             }
             file.Close();
             return dt;
+        }
+
+        public static bool checkExitsRecordById(int id, string dir)
+        {
+            List<string> lista_id = new List<string>();
+            lista_id = readIdsFromFile(dir);
+            return lista_id.Contains(id.ToString());
         }
         
     }

@@ -50,12 +50,15 @@ namespace Utils
             set { idmunicipio = value; }
         }
 
-        public void insertarBarrio(Barrio ba)
+        public void insertarBarrio(Barrio ba, bool is_editar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.barrio_dir;
             string data = (ba.idbarrio.ToString() +  sep + ba.idmunicipio.ToString() + sep + ba.nombre + sep + ba.poblacion +sep + ba.area + sep + ba.punto_cardinal);
-            Utilities.writeSingleLineToFile(dir, data);
+            if (is_editar)
+                Utilities.updateFromFileById(dir, ba.idbarrio, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
         }
     }
 }

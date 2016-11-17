@@ -42,15 +42,16 @@ namespace Utils
             set { punto_cardinal = value; }
         }
 
-        public void insertarProvincia(Provincia prov)
+        public void insertarProvincia(Provincia prov, bool iseditar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.provincia_dir;
             string data = prov.Idprovincia.ToString() + sep + prov.Nombre + sep + prov.Localizacion + sep + prov.Area.ToString() + sep + prov.Punto_cardinal;
-            Utilities.writeSingleLineToFile(dir, data);
+            if(iseditar)
+                Utilities.updateFromFileById(dir, prov.idprovincia, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
         }
-
-
 
         /*
         public static List<Provincia> fillListProvinciaFromFile()

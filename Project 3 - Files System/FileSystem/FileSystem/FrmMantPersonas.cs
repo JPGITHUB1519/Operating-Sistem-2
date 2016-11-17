@@ -53,16 +53,31 @@ namespace FileSystem
             pe.Sexo = Convert.ToChar(cmbsexo.Text);
             pe.Fecha_nacimiento = dtfecha.Value.ToShortDateString();
             pe.Estado_civil = cmbestadocivil.Text.Trim();
-            pe.Ocupacion = txtocupacion.Text.Trim();
-            pe.Idbarrio = Convert.ToInt32(cmbbarrio.Text);
-            pe.Idurbanizacion = Convert.ToInt32(cmburbanizacion.Text);
-            pe.Idseccion_dm = Convert.ToInt32(cmbsecciondm.Text);
-            pe.Idbarrio_dm = Convert.ToInt32(cmbbarriodm.Text);
-            pe.Idurbanizacion_dm = Convert.ToInt32(cmburbanizaciondm.Text);
-            pe.Iddistrito_municipal = Convert.ToInt32(cmbdistritomunicipal.Text);
+            if(string.IsNullOrEmpty(txtocupacion.Text.Trim()))
+                pe.Ocupacion = "desempleado";
+            if(!string.IsNullOrEmpty(cmbbarrio.Text))
+                pe.Idbarrio = Convert.ToInt32(cmbbarrio.Text);
+            if (!string.IsNullOrEmpty(cmburbanizacion.Text))
+                pe.Idurbanizacion = Convert.ToInt32(cmburbanizacion.Text);
+            if (!string.IsNullOrEmpty(cmbsecciondm.Text))
+                pe.Idseccion_dm = Convert.ToInt32(cmbsecciondm.Text);
+            if (!string.IsNullOrEmpty(cmbbarriodm.Text))
+                pe.Idbarrio_dm = Convert.ToInt32(cmbbarriodm.Text);
+            if (!string.IsNullOrEmpty(cmburbanizaciondm.Text))
+                pe.Idurbanizacion_dm = Convert.ToInt32(cmburbanizaciondm.Text);
+            if (!string.IsNullOrEmpty(cmbdistritomunicipal.Text))
+                pe.Iddistrito_municipal = Convert.ToInt32(cmbdistritomunicipal.Text);
             pe.Is_vivo = chkvivo.Checked;
-            pe.insertarPersona(pe);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Utilities.checkExitsRecordById(pe.Idpersona, Utilities.persona_dir))
+            {
+                pe.insertarPersona(pe, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                pe.insertarPersona(pe);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             limpiar_campos();
 
         }

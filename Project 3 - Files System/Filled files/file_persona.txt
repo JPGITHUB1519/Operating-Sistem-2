@@ -1,3 +1,1 @@
 idpersona,nombre,apellido,sexo,fecha_nacimiento,estado_civil,ocupacion,idbarrio,idurbanizacion,idseccion_dm,idbarrio_dm,idurbanizacion_dm,iddistrito_municipal,isvivo
-2,a,a,F,17/11/2016,Viudo/a,nothing,0,0,0,0,0,0,True
-1,jean,urena,M,15/11/2016,Soltero/a,desempleado,401,0,0,0,0,0,True

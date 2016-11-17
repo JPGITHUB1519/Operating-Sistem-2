@@ -50,12 +50,15 @@ namespace Utils
             set { iddistrito = value; }
         }
 
-        public void insertarSeccionDM(SeccionDM sec_dm)
+        public void insertarSeccionDM(SeccionDM sec_dm, bool is_editar = false)
         {
             char sep = Utils.Utilities.sep;
             string dir = Utilities.seccion_dm_dir;
             string data = (sec_dm.idseccion_dm.ToString() + sep + sec_dm.iddistrito.ToString() + sep + sec_dm.nombre + sep + sec_dm.poblacion + sep + sec_dm.area + sep + sec_dm.punto_cardinal);
-            Utilities.writeSingleLineToFile(dir, data);
+            if(is_editar)
+                Utilities.updateFromFileById(dir, sec_dm.idseccion_dm, data);
+            else
+                Utilities.writeSingleLineToFile(dir, data);
         }
 
     }

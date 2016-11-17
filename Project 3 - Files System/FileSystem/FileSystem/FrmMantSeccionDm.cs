@@ -40,8 +40,17 @@ namespace FileSystem
             sec_dm.Area = float.Parse(txtarea.Text.Trim());
             sec_dm.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
             sec_dm.Iddistrito = Convert.ToInt32(cmddistrito_municipal.Text);
-            sec_dm.insertarSeccionDM(sec_dm);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Utilities.checkExitsRecordById(sec_dm.Idseccion_dm, Utilities.seccion_dm_dir))
+            {
+                sec_dm.insertarSeccionDM(sec_dm, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                sec_dm.insertarSeccionDM(sec_dm);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
             limpiar_campos();
         }
 

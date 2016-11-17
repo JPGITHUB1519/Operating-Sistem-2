@@ -41,8 +41,16 @@ namespace FileSystem
             urb.Area = float.Parse(txtarea.Text.Trim());
             urb.Punto_cardinal = this.txtpunto_cardinal.Text.Trim();
             urb.Idmunicipio = Convert.ToInt32(cmbmunicipio.Text);
-            urb.insertarUrbanizacion(urb);
-            MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Utilities.checkExitsRecordById(urb.Idurbanizacion, Utilities.urbanizacion_dir))
+            {
+                urb.insertarUrbanizacion(urb, true);
+                MessageBox.Show("Exito Editando", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                urb.insertarUrbanizacion(urb);
+                MessageBox.Show("Exito", "FileSystem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             limpiar_campos();
         }
 

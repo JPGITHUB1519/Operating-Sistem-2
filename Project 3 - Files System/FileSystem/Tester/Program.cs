@@ -26,7 +26,7 @@ namespace Tester
             lista = Utilities.filterListByPersonName(lista, name);
             lista = Utilities.filterListByPersonApellido(lista, apellido);
             lista = Utilities.filterListByPersonSexo(lista, sexo);
-            lista = Utilities.filterListByPersonEstadoCivl(lista, estato_civil);
+            lista = Utilities.filterListByPersonEstadoCivil(lista, estato_civil);
             lista = Utilities.filterListByPersonOcupacion(lista, ocupacion);
             lista = Utilities.filterListByPersonAge(lista, edad, dic);
             Utilities.print_lista(lista);

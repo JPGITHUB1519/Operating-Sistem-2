@@ -1,6 +1,6 @@
 ﻿namespace FileSystem
 {
-    partial class FrmMantPersonas
+    partial class FrmReportesGeneral
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label8 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabpmantenimiento = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -49,37 +50,50 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cmbestadocivil = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtfecha = new System.Windows.Forms.DateTimePicker();
             this.cmbsexo = new System.Windows.Forms.ComboBox();
             this.txtapellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtedad = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbmayor = new System.Windows.Forms.RadioButton();
+            this.rbmenor = new System.Windows.Forms.RadioButton();
+            this.rbigual = new System.Windows.Forms.RadioButton();
             this.btnbuscar = new System.Windows.Forms.Button();
-            this.btneliminar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabpmantenimiento.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Maroon;
+            this.label8.Location = new System.Drawing.Point(372, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(220, 29);
+            this.label8.TabIndex = 107;
+            this.label8.Text = "Reportes General";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabpmantenimiento);
-            this.tabControl1.Location = new System.Drawing.Point(17, 76);
+            this.tabControl1.Location = new System.Drawing.Point(67, 53);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(772, 926);
-            this.tabControl1.TabIndex = 53;
+            this.tabControl1.Size = new System.Drawing.Size(850, 926);
+            this.tabControl1.TabIndex = 108;
             // 
             // tabpmantenimiento
             // 
@@ -88,18 +102,17 @@
             this.tabpmantenimiento.Location = new System.Drawing.Point(4, 22);
             this.tabpmantenimiento.Name = "tabpmantenimiento";
             this.tabpmantenimiento.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpmantenimiento.Size = new System.Drawing.Size(764, 900);
+            this.tabpmantenimiento.Size = new System.Drawing.Size(842, 900);
             this.tabpmantenimiento.TabIndex = 0;
             this.tabpmantenimiento.Text = "Mantenimiento";
             this.tabpmantenimiento.UseVisualStyleBackColor = true;
+            this.tabpmantenimiento.Click += new System.EventHandler(this.tabpmantenimiento_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnbuscar);
-            this.groupBox2.Controls.Add(this.btneliminar);
             this.groupBox2.Controls.Add(this.btnsalir);
             this.groupBox2.Controls.Add(this.btncancelar);
-            this.groupBox2.Controls.Add(this.btnNuevo);
             this.groupBox2.Location = new System.Drawing.Point(127, 761);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(584, 122);
@@ -109,6 +122,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.txtedad);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cmbdistritomunicipal);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.cmburbanizaciondm);
@@ -126,20 +142,18 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.cmbestadocivil);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dtfecha);
             this.groupBox1.Controls.Add(this.cmbsexo);
             this.groupBox1.Controls.Add(this.txtapellido);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.txtcodigo);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(6, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(737, 717);
+            this.groupBox1.Size = new System.Drawing.Size(803, 717);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Mantenimiento de Personas";
@@ -303,13 +317,6 @@
             this.label2.TabIndex = 120;
             this.label2.Text = "Estado Civil";
             // 
-            // dtfecha
-            // 
-            this.dtfecha.Location = new System.Drawing.Point(326, 228);
-            this.dtfecha.Name = "dtfecha";
-            this.dtfecha.Size = new System.Drawing.Size(200, 20);
-            this.dtfecha.TabIndex = 119;
-            // 
             // cmbsexo
             // 
             this.cmbsexo.FormattingEnabled = true;
@@ -340,7 +347,7 @@
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(326, 99);
+            this.txtnombre.Location = new System.Drawing.Point(327, 97);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(188, 20);
             this.txtnombre.TabIndex = 111;
@@ -360,16 +367,6 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 108;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(148, 228);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 20);
-            this.label4.TabIndex = 106;
-            this.label4.Text = "Fecha Nacimiento";
             // 
             // label7
             // 
@@ -401,82 +398,113 @@
             this.label3.TabIndex = 103;
             this.label3.Text = "Codigo";
             // 
-            // label8
+            // label4
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(240, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(338, 29);
-            this.label8.TabIndex = 54;
-            this.label8.Text = "Mantenimiento de Personas";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(240, 230);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 20);
+            this.label4.TabIndex = 140;
+            this.label4.Text = "Edad";
+            // 
+            // txtedad
+            // 
+            this.txtedad.Location = new System.Drawing.Point(327, 230);
+            this.txtedad.Name = "txtedad";
+            this.txtedad.Size = new System.Drawing.Size(188, 20);
+            this.txtedad.TabIndex = 141;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rbigual);
+            this.groupBox3.Controls.Add(this.rbmenor);
+            this.groupBox3.Controls.Add(this.rbmayor);
+            this.groupBox3.Location = new System.Drawing.Point(539, 216);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(189, 44);
+            this.groupBox3.TabIndex = 142;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Filtro";
+            // 
+            // rbmayor
+            // 
+            this.rbmayor.AutoSize = true;
+            this.rbmayor.Location = new System.Drawing.Point(6, 19);
+            this.rbmayor.Name = "rbmayor";
+            this.rbmayor.Size = new System.Drawing.Size(54, 17);
+            this.rbmayor.TabIndex = 0;
+            this.rbmayor.TabStop = true;
+            this.rbmayor.Text = "Mayor";
+            this.rbmayor.UseVisualStyleBackColor = true;
+            // 
+            // rbmenor
+            // 
+            this.rbmenor.AutoSize = true;
+            this.rbmenor.Location = new System.Drawing.Point(71, 19);
+            this.rbmenor.Name = "rbmenor";
+            this.rbmenor.Size = new System.Drawing.Size(55, 17);
+            this.rbmenor.TabIndex = 1;
+            this.rbmenor.TabStop = true;
+            this.rbmenor.Text = "Menor";
+            this.rbmenor.UseVisualStyleBackColor = true;
+            // 
+            // rbigual
+            // 
+            this.rbigual.AutoSize = true;
+            this.rbigual.Location = new System.Drawing.Point(132, 19);
+            this.rbigual.Name = "rbigual";
+            this.rbigual.Size = new System.Drawing.Size(48, 17);
+            this.rbigual.TabIndex = 2;
+            this.rbigual.TabStop = true;
+            this.rbigual.Text = "Igual";
+            this.rbigual.UseVisualStyleBackColor = true;
             // 
             // btnbuscar
             // 
             this.btnbuscar.Image = global::FileSystem.Properties.Resources.search;
-            this.btnbuscar.Location = new System.Drawing.Point(239, 19);
+            this.btnbuscar.Location = new System.Drawing.Point(145, 19);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(106, 72);
             this.btnbuscar.TabIndex = 9;
             this.btnbuscar.UseVisualStyleBackColor = true;
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
-            // btneliminar
-            // 
-            this.btneliminar.Image = global::FileSystem.Properties.Resources.delete;
-            this.btneliminar.Location = new System.Drawing.Point(127, 19);
-            this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(106, 72);
-            this.btneliminar.TabIndex = 8;
-            this.btneliminar.UseVisualStyleBackColor = true;
-            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
-            // 
             // btnsalir
             // 
             this.btnsalir.Image = global::FileSystem.Properties.Resources.User_Interface_Login_icon;
-            this.btnsalir.Location = new System.Drawing.Point(463, 19);
+            this.btnsalir.Location = new System.Drawing.Point(372, 19);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(106, 72);
             this.btnsalir.TabIndex = 11;
             this.btnsalir.UseVisualStyleBackColor = true;
-            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // btncancelar
             // 
             this.btncancelar.Image = global::FileSystem.Properties.Resources.Undo_icon;
-            this.btncancelar.Location = new System.Drawing.Point(351, 19);
+            this.btncancelar.Location = new System.Drawing.Point(257, 19);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(106, 72);
             this.btncancelar.TabIndex = 10;
             this.btncancelar.UseVisualStyleBackColor = true;
-            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = global::FileSystem.Properties.Resources.save;
-            this.btnNuevo.Location = new System.Drawing.Point(15, 19);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(106, 72);
-            this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // FrmMantPersonas
+            // FrmReportesGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 1006);
+            this.ClientSize = new System.Drawing.Size(945, 1006);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label8);
-            this.Name = "FrmMantPersonas";
-            this.Text = "FrmMantPersonas";
-            this.Load += new System.EventHandler(this.FrmMantPersonas_Load);
+            this.Name = "FrmReportesGeneral";
+            this.Text = "FrmReportesGeneral";
+            this.Load += new System.EventHandler(this.FrmReportesGeneral_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabpmantenimiento.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,32 +512,20 @@
 
         #endregion
 
+        public System.Windows.Forms.Label label8;
         public System.Windows.Forms.TabControl tabControl1;
         public System.Windows.Forms.TabPage tabpmantenimiento;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.Button btnbuscar;
-        public System.Windows.Forms.Button btneliminar;
         public System.Windows.Forms.Button btnsalir;
         public System.Windows.Forms.Button btncancelar;
-        public System.Windows.Forms.Button btnNuevo;
         public System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtnombre;
-        private System.Windows.Forms.TextBox txtcodigo;
-        public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rbigual;
+        private System.Windows.Forms.RadioButton rbmenor;
+        private System.Windows.Forms.RadioButton rbmayor;
+        private System.Windows.Forms.TextBox txtedad;
         public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox chkvivo;
-        public System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbestadocivil;
-        public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dtfecha;
-        private System.Windows.Forms.ComboBox cmbsexo;
-        private System.Windows.Forms.TextBox txtapellido;
-        public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtocupacion;
         private System.Windows.Forms.ComboBox cmbdistritomunicipal;
         public System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cmburbanizaciondm;
@@ -522,5 +538,20 @@
         public System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmbbarrio;
         public System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtocupacion;
+        private System.Windows.Forms.CheckBox chkvivo;
+        public System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbestadocivil;
+        public System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbsexo;
+        private System.Windows.Forms.TextBox txtapellido;
+        public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtcodigo;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label3;
+
     }
 }

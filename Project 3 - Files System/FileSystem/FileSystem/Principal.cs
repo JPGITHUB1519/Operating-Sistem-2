@@ -165,5 +165,12 @@ namespace FileSystem
             doform.MdiParent = this;
             doform.Show();
         }
+
+        private void reporteGeneralToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReportesGeneral doform = new FrmReportesGeneral();
+            doform.MdiParent = this;
+            doform.Show();
+        }
     }
 }

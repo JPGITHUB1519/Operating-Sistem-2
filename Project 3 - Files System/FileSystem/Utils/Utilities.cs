@@ -165,6 +165,40 @@ namespace Utils
             return dt;
         }
 
+        // Convert to DataTable.
+        public static DataTable ConvertListToDataTable(List<string> lista)
+        {
+            // New table.
+            DataTable dt = new DataTable();
+            string[] string_splited;
+            int cont = 0;
+            foreach (string element in lista)
+            {
+                // first row are the columns
+                string_splited = element.Split(Utilities.sep);
+                if (cont == 0)
+                {
+                    foreach (string column in string_splited)
+                    {
+                        dt.Columns.Add(column, typeof(string));
+                    }
+                }
+                else
+                {
+                    DataRow dr = dt.NewRow();
+                    for (int i = 0; i < string_splited.Length; i++)
+                    {
+                        dr[i] = string_splited[i];
+                    }
+                    dt.Rows.Add(dr);
+                }
+                cont++;
+
+            }
+
+            return dt;
+        }
+
         public static List<string> getPersonByNameFromFile(string name)
         {
             string dir = Utilities.persona_dir;
@@ -223,7 +257,7 @@ namespace Utils
             return list_filted;
         }
 
-        public static List<string> filterListByPersonEstadoCivl(List<string> lista, string filter)
+        public static List<string> filterListByPersonEstadoCivil(List<string> lista, string filter)
         {
             List<string> list_filted = new List<string>();
             string[] array_splited;

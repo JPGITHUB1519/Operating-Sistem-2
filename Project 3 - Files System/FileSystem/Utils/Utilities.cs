@@ -165,11 +165,149 @@ namespace Utils
             return dt;
         }
 
+        public static List<string> getPersonByNameFromFile(string name)
+        {
+            string dir = Utilities.persona_dir;
+            string line;
+            string[] line_split;
+            List<string> lista = new List<string>();
+            System.IO.StreamReader file = new System.IO.StreamReader(dir);
+            while ((line = file.ReadLine()) != null)
+            {
+                // name column 1
+                line_split = line.Split(Utilities.sep);
+                if(line_split[1] == name)
+                    lista.Add(line);
+            }
+            file.Close();
+            return lista;
+        }
+
+        public static List<string> filterListByPersonName(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string []array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[1] == filter)
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByPersonApellido(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[2] == filter)
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByPersonSexo(List<string> lista, char filter)
+        {
+            filter = char.ToLower(filter);
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[3] == filter.ToString())
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByPersonEstadoCivl(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[5] == filter.ToString())
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByPersonAge(List<string> lista, int edad, Dictionary<string,bool> dic)
+        {
+            string opcion="";
+            if (dic["ismayor"] == true)
+                opcion = "mayor";
+            if (dic["ismenor"] == true)
+                opcion = "menor";
+            if (dic["equal"] == true)
+                opcion = "equal";
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            DateTime now = DateTime.Today;
+            DateTime string_to_date;
+            int calculated_age;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                string_to_date = DateTime.Parse(array_splited[4]);
+                calculated_age = now.Year - string_to_date.Year;
+                //Console.WriteLine(calculated_age);
+                if (opcion == "mayor")
+                {
+                    if (calculated_age > edad)
+                    {
+                        list_filted.Add(line);
+                    }
+                }
+                if (opcion == "menor")
+                {
+                    if (calculated_age < edad)
+                    {
+                        list_filted.Add(line);
+                    }
+                }
+                if (opcion == "equal")
+                {
+                    if (calculated_age == edad)
+                    {
+                        list_filted.Add(line);
+                    }
+                }      
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByPersonOcupacion(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[6] == filter.ToString())
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
         public static bool checkExitsRecordById(int id, string dir)
         {
             List<string> lista_id = new List<string>();
             lista_id = readIdsFromFile(dir);
             return lista_id.Contains(id.ToString());
+        }
+
+        public static void print_lista(List<string> lista)
+        {
+            foreach (object element in lista)
+            {
+                Console.WriteLine(element);
+            }
         }
         
     }

@@ -40,7 +40,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(306, 18);
+            this.label8.Location = new System.Drawing.Point(509, 20);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(334, 29);
             this.label8.TabIndex = 113;
@@ -49,15 +49,15 @@
             // dgvdata
             // 
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdata.Location = new System.Drawing.Point(109, 189);
+            this.dgvdata.Location = new System.Drawing.Point(28, 189);
             this.dgvdata.Name = "dgvdata";
-            this.dgvdata.Size = new System.Drawing.Size(663, 486);
+            this.dgvdata.Size = new System.Drawing.Size(1233, 741);
             this.dgvdata.TabIndex = 114;
             // 
             // btnsalir
             // 
             this.btnsalir.Image = global::FileSystem.Properties.Resources.User_Interface_Login_icon;
-            this.btnsalir.Location = new System.Drawing.Point(434, 87);
+            this.btnsalir.Location = new System.Drawing.Point(682, 87);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(106, 72);
             this.btnsalir.TabIndex = 116;
@@ -66,7 +66,7 @@
             // button1
             // 
             this.button1.Image = global::FileSystem.Properties.Resources.SEO_icon1;
-            this.button1.Location = new System.Drawing.Point(311, 87);
+            this.button1.Location = new System.Drawing.Point(548, 87);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 72);
             this.button1.TabIndex = 118;
@@ -77,13 +77,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 774);
+            this.ClientSize = new System.Drawing.Size(1284, 942);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.label8);
             this.Name = "FrmConsReporteGeneral";
             this.Text = "FrmConsReporteGeneral";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmConsReporteGeneral_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).EndInit();
             this.ResumeLayout(false);

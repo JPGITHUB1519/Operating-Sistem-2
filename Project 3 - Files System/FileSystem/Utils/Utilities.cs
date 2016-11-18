@@ -322,12 +322,111 @@ namespace Utils
             foreach (string line in lista)
             {
                 array_splited = line.Split(Utilities.sep);
-                if (array_splited[6] == filter.ToString())
+                if (array_splited[6] == filter)
 
                     list_filted.Add(line);
             }
             return list_filted;
         }
+
+        public static List<string> filterListByBarrio(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[7] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByUrbanizacion(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[8] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListBySeccionDM(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[9] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByBarrioDM(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[10] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByUrbanizacionDM(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[11] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByDistritoDM(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[12] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
+        public static List<string> filterListByVivo(List<string> lista, string filter)
+        {
+            List<string> list_filted = new List<string>();
+            string[] array_splited;
+            foreach (string line in lista)
+            {
+                array_splited = line.Split(Utilities.sep);
+                if (array_splited[13] == filter)
+
+                    list_filted.Add(line);
+            }
+            return list_filted;
+        }
+
 
         public static bool checkExitsRecordById(int id, string dir)
         {

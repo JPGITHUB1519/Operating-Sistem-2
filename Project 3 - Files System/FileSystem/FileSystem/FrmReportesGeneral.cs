@@ -11,6 +11,12 @@ namespace FileSystem
 {
     public partial class FrmReportesGeneral : Form
     {
+        List<String> lista_barrio = new List<String>();
+        List<String> lista_urbanizacion = new List<String>();
+        List<String> lista_seccion_dm = new List<String>();
+        List<String> lista_barrio_dm = new List<String>();
+        List<String> lista_urbanizacion_dm = new List<String>();
+        List<String> lista_distrito_municipal = new List<String>();
         List<String> lista = new List<String>();
         public FrmReportesGeneral()
         {
@@ -62,6 +68,31 @@ namespace FileSystem
                     dic["igual"] = true;
                 this.lista = Utilities.filterListByPersonAge(this.lista, Convert.ToInt32(txtedad.Text.Trim()), dic);
             }
+            if (!string.IsNullOrEmpty(cmbbarrio.Text))
+            {
+                this.lista = Utilities.filterListByBarrio(this.lista, cmbbarrio.Text.Trim());
+            }
+            if (!string.IsNullOrEmpty(cmburbanizacion.Text))
+            {
+                this.lista = Utilities.filterListByUrbanizacion(this.lista, cmburbanizacion.Text.Trim());
+            }
+            if (!string.IsNullOrEmpty(cmbsecciondm.Text.Trim()))
+            {
+                this.lista = Utilities.filterListBySeccionDM(this.lista, cmbsecciondm.Text.Trim());
+            }
+            if (!string.IsNullOrEmpty(cmbbarriodm.Text))
+            {
+                this.lista = Utilities.filterListByBarrioDM(this.lista, cmbbarriodm.Text.Trim());
+            }
+            if (!string.IsNullOrEmpty(cmburbanizaciondm.Text.Trim()))
+            {
+                this.lista = Utilities.filterListByUrbanizacionDM(this.lista, cmburbanizaciondm.Text.Trim());
+            }
+            if (!string.IsNullOrEmpty(cmbdistritomunicipal.Text))
+            {
+                this.lista = Utilities.filterListByDistritoDM(this.lista,cmbdistritomunicipal.Text.Trim());
+            }
+            this.lista = Utilities.filterListByVivo(this.lista, chkvivo.Checked.ToString());
             // adding columns
             lista.Insert(0, "idpersona,nombre,apellido,sexo,fecha_nacimiento,estado_civil,ocupacion,idbarrio,idurbanizacion,idseccion_dm,idbarrio_dm,idurbanizacion_dm,iddistrito_municipal,isvivo");
             FrmConsReporteGeneral consrepgen = new FrmConsReporteGeneral(this.lista);
@@ -75,7 +106,50 @@ namespace FileSystem
 
         private void FrmReportesGeneral_Load(object sender, EventArgs e)
         {
+            // fill comboboxes
+            // putting as true chkvivo
+            this.chkvivo.Checked = true;
+            // filling combo box barrio
+            lista_barrio = Utilities.readIdsFromFile(Utilities.barrio_dir);
+            foreach (string id in lista_barrio)
+            {
+                cmbbarrio.Items.Add(id);
+            }
 
+            // filling combo box urbanizacion
+            lista_urbanizacion = Utilities.readIdsFromFile(Utilities.urbanizacion_dir);
+            foreach (string id in lista_urbanizacion)
+            {
+                cmburbanizacion.Items.Add(id);
+            }
+
+            // filling combo box seccion_dm
+            lista_seccion_dm = Utilities.readIdsFromFile(Utilities.seccion_dm_dir);
+            foreach (string id in lista_seccion_dm)
+            {
+                cmbsecciondm.Items.Add(id);
+            }
+
+            // filling combo box barrio_dm
+            lista_barrio_dm = Utilities.readIdsFromFile(Utilities.barrio_dm_dir);
+            foreach (string id in lista_barrio_dm)
+            {
+                cmbbarriodm.Items.Add(id);
+            }
+
+            // filling combo box urbanizacion_dm
+            lista_urbanizacion_dm = Utilities.readIdsFromFile(Utilities.urbanizacion_dm_dir);
+            foreach (string id in lista_urbanizacion_dm)
+            {
+                cmburbanizaciondm.Items.Add(id);
+            }
+
+            // filling combo box distrito_municipal
+            lista_distrito_municipal = Utilities.readIdsFromFile(Utilities.distrito_municipal_dir);
+            foreach (string id in lista_distrito_municipal)
+            {
+                cmbdistritomunicipal.Items.Add(id);
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

@@ -646,6 +646,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Principal";
             this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);

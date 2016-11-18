@@ -103,7 +103,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox11</rd:DefaultName>
         <Top>0.4101cm</Top>
-        <Left>11.23156cm</Left>
+        <Left>13.36464cm</Left>
         <Height>1.03188cm</Height>
         <Width>8.17563cm</Width>
         <Style>
@@ -126,7 +126,10 @@
               <Width>0.98425in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.98425in</Width>
+              <Width>0.94258in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.54725in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.98425in</Width>
@@ -138,10 +141,7 @@
               <Width>0.98425in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.98425in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>0.98425in</Width>
+              <Width>0.74467in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.98425in</Width>
@@ -1045,9 +1045,9 @@
         </TablixRowHierarchy>
         <DataSetName>dataset_persona</DataSetName>
         <Top>2.39924cm</Top>
-        <Left>2.18758cm</Left>
+        <Left>0.25612cm</Left>
         <Height>1.2cm</Height>
-        <Width>35cm</Width>
+        <Width>33.17557cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>

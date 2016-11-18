@@ -1,5 +1,5 @@
 idpersona,nombre,apellido,sexo,fecha_nacimiento,estado_civil,ocupacion,idbarrio,idurbanizacion,idseccion_dm,idbarrio_dm,idurbanizacion_dm,iddistrito_municipal,isvivo
 2,a,a,F,17/11/2016,Viudo/a,nothing,0,0,0,0,0,0,True
-1,jean,urena,m,15/01/1998,soltero/a,desempleado,401,0,0,0,0,0,True
-2,jean,urena,m,15/01/1999,soltero/a,informatico,401,0,0,0,0,0,True
-2,jean,urena,f,15/01/1999,soltero/a,informatico,401,0,0,0,0,0,True
+1,jean,urena,m,15/01/1998,soltero/a,desempleado,401,501,601,701,801,301,True
+2,pedro,reyes,m,15/01/1999,soltero/a,informatico,402,502,602,702,802,302,False
+2,carlos,santana,f,15/01/1999,soltero/a,informatico,403,503,603,703,803,303,False

@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Release\Tester.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Release\Tester.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Release\Utils.dll
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Release\Utils.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Release\Tester.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Release\Tester.pdb

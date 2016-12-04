@@ -67,6 +67,17 @@ namespace Utils
             }
         }
 
+        public static void writeListToFile(string dir, List<string> lista)
+        {
+            using (System.IO.StreamWriter file = File.AppendText(dir))
+            {
+                foreach (string line in lista)
+                {
+                    file.WriteLine(line);
+                }
+            }
+        }
+
         public static void deleteFromFileById(string dir, int id)
         {
             string line = null;
@@ -438,6 +449,21 @@ namespace Utils
         public static void print_lista(List<string> lista)
         {
             foreach (object element in lista)
+            {
+                Console.WriteLine(element);
+            }
+        }
+
+        public static void printCollection<T>(IEnumerable<T> a)
+        {    
+           foreach(var i in a)
+           {
+                Console.WriteLine(i);
+           }
+        }
+        public static void printList(List<int> lista)
+        {
+            foreach (int element in lista)
             {
                 Console.WriteLine(element);
             }

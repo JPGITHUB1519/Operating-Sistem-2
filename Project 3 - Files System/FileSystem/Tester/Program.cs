@@ -10,31 +10,14 @@ namespace Tester
     {
         static void Main(string[] args)
         {
-            //Console.Write("persona");
-            string name = "jean";
-            string apellido = "urena";
-            char sexo = 'm';
-            string estato_civil = "soltero/a";
-            string ocupacion = "informatico";
-            int edad = 5;
-            Dictionary<string, bool> dic = new Dictionary<string,bool>();
-            dic.Add("ismayor", true);
-            dic.Add("ismenor", false);
-            dic.Add("equal", false);
-            List<string> lista = new List<string>();
-            lista = Utilities.readFileByList(Utilities.persona_dir);
-            Console.WriteLine(lista[2].Split(Utilities.sep)[10]);
-            //lista = Utilities.filterListBySeccionDM(lista, "602");
-            /*
-            lista = Utilities.filterListByPersonName(lista, name);
-            lista = Utilities.filterListByPersonApellido(lista, apellido);
-            lista = Utilities.filterListByPersonSexo(lista, sexo);
-            lista = Utilities.filterListByPersonEstadoCivil(lista, estato_civil);
-            lista = Utilities.filterListByPersonOcupacion(lista, ocupacion);
-            lista = Utilities.filterListByPersonAge(lista, edad, dic);
-             * */
-            Utilities.print_lista(lista);
+            //string texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut sapien tortor.";
+            string texto = "jean";
+            string encrypted = Encrypt.encriptar(texto);
+            Console.WriteLine(encrypted);
+            encrypted = Encrypt.desencriptar(encrypted);
+            Console.WriteLine("\n\n" + encrypted);
             Console.ReadKey();
+
         }
     }
 }

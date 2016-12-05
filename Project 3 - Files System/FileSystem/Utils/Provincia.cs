@@ -58,8 +58,8 @@ namespace Utils
         {
             List<string> result = new List<string>();
             List<string> parameters = (List<string>)dic["parameters"];
-            Console.WriteLine("\n**** Parametros ****\n");
-            Utilities.printCollection(parameters);
+            //Console.WriteLine("\n**** Parametros ****\n");
+            //Utilities.printCollection(parameters);
             List<int> columns_position_infile = new List<int>();
             result = Utilities.readFileByList(Utilities.provincia_dir);
             if (parameters[0] == "*")
@@ -88,9 +88,9 @@ namespace Utils
                 {
                     columns_position_infile.Add(4);
                 }
-                Console.WriteLine("\n**** Elementos ****\n\n");
-                Utilities.printCollection(columns_position_infile);
-                Console.WriteLine("\n**** Find elementos ****\n\n");
+                //Console.WriteLine("\n**** Elementos ****\n\n");
+                //Utilities.printCollection(columns_position_infile);
+                //Console.WriteLine("\n**** Find elementos ****\n\n");
                 result = Utilities.readFileByListSpecified(Utilities.provincia_dir, columns_position_infile);
             }
             return result;

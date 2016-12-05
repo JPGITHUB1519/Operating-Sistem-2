@@ -116,6 +116,12 @@
     <Compile Include="FrmConsUrbanizacionDM.Designer.cs">
       <DependentUpon>FrmConsUrbanizacionDM.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDbClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDbClient.Designer.cs">
+      <DependentUpon>frmDbClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMantBarrio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsUrbanizacionDM.resx">
       <DependentUpon>FrmConsUrbanizacionDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDbClient.resx">
+      <DependentUpon>frmDbClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantBarrio.resx">
       <DependentUpon>FrmMantBarrio.cs</DependentUpon>

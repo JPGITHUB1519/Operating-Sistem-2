@@ -1,0 +1,5 @@
+idmunicipio,idprovincia,nombre,location,area,punto_cardinal
+201,101,boca chica,18°27′14″N 69°36′23″O,145,este
+202,102,tamboril,19°29′N 70°36′O,63,noroeste
+203,103,Constanza,18°55′N 70°45′O,841,sureste
+1,102,2,2,2,2

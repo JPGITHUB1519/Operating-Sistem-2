@@ -36,6 +36,44 @@ namespace Utils
             return lista;
         }
 
+        // read a file and convert it into list but specifiying the columns
+        public static List<string> readFileByListSpecified(string dir, List<int>columns)
+        {
+            int column_counter = 0;
+            string line;
+            string [] splited;
+            string new_line = "";
+            List<string> lista = new List<string>();
+            System.IO.StreamReader file = new System.IO.StreamReader(dir);
+            while ((line = file.ReadLine()) != null)
+            {
+                splited = line.Split(Utilities.sep);
+                column_counter = 0;
+                for (int x = 0; x < splited.Length; x++)
+                {
+                    if (columns.Contains(x))
+                    {
+                        if (column_counter != columns.Count - 1)
+                        {
+                            new_line = new_line + splited[x] + sep;
+                            column_counter++;
+                        }
+                        else
+                        {
+                            new_line = new_line + splited[x];
+                            column_counter++;
+                        }
+                    }
+                }
+                
+                lista.Add(new_line);
+                new_line = "";
+            }
+            file.Close();
+
+            return lista;
+        }
+
         public static string[] fileToStringArray(string dir)
         {
             string[] lines = File.ReadAllLines("file.txt");
@@ -64,17 +102,6 @@ namespace Utils
             using (System.IO.StreamWriter file = File.AppendText(dir))
             {
                file.WriteLine(line);
-            }
-        }
-
-        public static void writeListToFile(string dir, List<string> lista)
-        {
-            using (System.IO.StreamWriter file = File.AppendText(dir))
-            {
-                foreach (string line in lista)
-                {
-                    file.WriteLine(line);
-                }
             }
         }
 
@@ -468,6 +495,65 @@ namespace Utils
                 Console.WriteLine(element);
             }
         }
-        
+
+        public static Dictionary<string, object> selectQueryReader(string query)
+        {
+            string command;
+            string universal_filter = "";
+            string table = "";
+            List<string> parameters = new List<string>();
+            bool end_parameters = false;
+            int pos_finished_parameters = 0;
+            string[] splited;
+            query = query.ToLower();
+            splited = query.Split(' ');
+            //Utilities.printCollection(splited);
+            int cont = 0;
+            command = splited[0];
+            Dictionary<string, object> filters = new Dictionary<string, object>();
+
+            for (int i = 0; i < splited.Length; i++)
+            {
+                if (i == 0)
+                {
+                    command = splited[0];
+                }
+                if (i == 1)
+                {
+                    if (splited[i] == "distinct" || splited[i] == "all")
+                    {
+                        universal_filter = splited[i];
+                        end_parameters = true;
+                        continue;
+                    }
+                }
+
+                if (i == 1 || end_parameters == true)
+                {
+                    if (splited[i] != "from")
+                    {
+                        parameters.Add(splited[i].Replace(",", ""));
+                    }
+                    else
+                    {
+                        end_parameters = false;
+                        pos_finished_parameters = i;
+                    }
+                }
+
+                if (i == pos_finished_parameters + 1)
+                {
+                    table = splited[pos_finished_parameters + 1];
+                }
+
+            }
+
+            filters.Add("command", command);
+            filters.Add("universal_filter", universal_filter);
+            filters.Add("parameters", parameters);
+            filters.Add("table", table);
+
+            return filters;   
+        }        
     }
 }

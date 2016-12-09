@@ -496,6 +496,60 @@ namespace Utils
             }
         }
 
+        public static List<string> comma_quitter(List<string> parameters)
+        {
+            List<string> new_parameters_list = new List<string>();
+            string aux_parameter;
+            foreach (string parameter in parameters)
+            {
+                aux_parameter = parameter.Replace(',', ' ');
+                new_parameters_list.Add(aux_parameter);
+            }
+            return new_parameters_list;
+        }
+
+        public static List<string> getParametersQuery(string query)
+        {
+            query = query.ToLower();
+            string [] query_splited = query.Split(' ');
+            List<string> parameters = new List<string>();
+            for (int i = 0; i < query.Length; i++)
+            {
+                if(query_splited[i] == "from") break;
+                if (query_splited[i] == "select" || query_splited[i] == "distinct") continue;
+                parameters.Add(query_splited[i]);
+            }
+            return parameters;
+        }
+
+        public static Dictionary<string, object> selectQueryReader(string query)
+        {
+            string [] query_splited = query.Split();
+            string command = query_splited[0];
+            List<string> parameters = new List<string>();
+            Dictionary<string, object> result = new Dictionary<string, object>();
+            string table_name = "";
+            for (int i = 0; i < query_splited.Length; i++)
+            {
+                if (query_splited[i] == "from")
+                {
+                    table_name = query_splited[i + 1];
+                    break;
+                }
+                if (query_splited[i] == "select")
+                {
+                    continue;
+                }
+                parameters.Add(query_splited[i].Replace(",", ""));
+            }
+            //Utilities.printCollection(parameters);
+            result.Add("table_name", table_name);
+            result.Add("command", command);
+            result.Add("parameters", parameters);
+            return result;
+
+        }
+           /*
         public static Dictionary<string, object> selectQueryReader(string query)
         {
             string command;
@@ -507,6 +561,7 @@ namespace Utils
             string[] splited;
             query = query.ToLower();
             splited = query.Split(' ');
+            Utilities.printCollection(query);
             //Utilities.printCollection(splited);
             int cont = 0;
             command = splited[0];
@@ -554,6 +609,7 @@ namespace Utils
             filters.Add("table", table);
 
             return filters;   
-        }        
+        }
+            * */
     }
 }

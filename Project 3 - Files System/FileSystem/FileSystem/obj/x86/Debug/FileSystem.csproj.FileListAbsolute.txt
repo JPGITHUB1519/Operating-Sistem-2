@@ -69,3 +69,7 @@ C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmsolicitudes.resources
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmpeticiones.resources
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmconsulta.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmconsulta.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmDbClient.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmpeticiones.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmsolicitudes.resources

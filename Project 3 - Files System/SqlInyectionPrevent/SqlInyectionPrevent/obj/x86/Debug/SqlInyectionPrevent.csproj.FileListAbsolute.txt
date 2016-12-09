@@ -1,0 +1,8 @@
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\bin\Debug\SqlInyectionPrevent.exe.config
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\bin\Debug\SqlInyectionPrevent.exe
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\bin\Debug\SqlInyectionPrevent.pdb
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\obj\x86\Debug\SqlInyectionPrevent.Form1.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\obj\x86\Debug\SqlInyectionPrevent.Properties.Resources.resources
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\obj\x86\Debug\SqlInyectionPrevent.csproj.GenerateResource.Cache
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\obj\x86\Debug\SqlInyectionPrevent.exe
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\SqlInyectionPrevent\SqlInyectionPrevent\obj\x86\Debug\SqlInyectionPrevent.pdb

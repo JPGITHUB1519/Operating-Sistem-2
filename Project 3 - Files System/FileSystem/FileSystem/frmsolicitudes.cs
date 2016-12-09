@@ -115,5 +115,11 @@ namespace FileSystem
             this.rtbpeticion_desencriptada.Text = string.Empty;
             this.rtbpeticion_encriptada.Focus();
         }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            frmconsulta doform = new frmconsulta(this.rtbpeticion_desencriptada.Text);
+            doform.Show();
+        }
     }
 }

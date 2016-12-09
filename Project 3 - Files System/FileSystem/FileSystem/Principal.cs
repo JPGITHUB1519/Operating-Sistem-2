@@ -172,5 +172,19 @@ namespace FileSystem
             doform.MdiParent = this;
             doform.Show();
         }
+
+        private void localesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmpeticiones doform = new frmpeticiones();
+            doform.MdiParent = this;
+            doform.Show();
+        }
+
+        private void externasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmsolicitudes doform = new frmsolicitudes();
+            doform.MdiParent = this;
+            doform.Show();
+        }
     }
 }

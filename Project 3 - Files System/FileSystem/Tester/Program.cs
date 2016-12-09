@@ -111,7 +111,10 @@ namespace Tester
             */
 
 
-            
+
+            /*
+             * 
+             * query principal
             string query = "Select distinct idprovincia, nombre, location, area from provincia where idprovincia = 1";
             query = query.ToLower();
             Dictionary<string, object> filters = new Dictionary<string, object>();
@@ -119,6 +122,11 @@ namespace Tester
             List<string> result;
             result = Provincia.filterProvincia(filters);
             Utilities.printCollection(result);
+            Console.ReadKey();
+             * */
+
+            Encrypt.encriptarArchivo("file_municipio.txt");
+            Console.WriteLine(Encrypt.desencriptarArchivo("encripted_file_municipio.txt"));
             Console.ReadKey();
 
             /*

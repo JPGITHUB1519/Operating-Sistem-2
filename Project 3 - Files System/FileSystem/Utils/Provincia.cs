@@ -56,6 +56,7 @@ namespace Utils
         // sql queries filters
         public static List<String> filterProvincia(Dictionary<string, object>dic)
         {
+            string columns = "";
             List<string> result = new List<string>();
             List<string> parameters = (List<string>)dic["parameters"];
             //Console.WriteLine("\n**** Parametros ****\n");

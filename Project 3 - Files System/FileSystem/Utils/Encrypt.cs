@@ -104,12 +104,43 @@ namespace Utils
             return encrypted;
         }
 
-        public static void encriptarArchivo(string filename)
+        // tomar un archivo y guarda otro encriptado
+        public static void encriptarArchivo(string dir)
         {
-            string content_file = Utilities.fileToString(filename);
-            string encrypted_content_file = encriptar(content_file);
-            Utilities.writeSingleLineToFile(filename, encrypted_content_file);
+            string line;
+            string new_filename = "encripted_" + dir;
+            System.IO.StreamReader file_reader = new System.IO.StreamReader(dir);
+            System.IO.StreamWriter file_writer = new System.IO.StreamWriter(new_filename, false);
+            while ((line = file_reader.ReadLine()) != null)
+            {
+                line = encriptar(line);
+                file_writer.WriteLine(line);
+            }
+            file_reader.Close();
+            file_writer.Close();
         }
+
+        // encripta una peticion a un archivo;
+        public static void encriptarPeticion(string peticion, string dir)
+        {
+            System.IO.File.WriteAllText(dir, peticion);
+        }
+
+
+        public static string desencriptarArchivo(string dir)
+        {
+            string line;
+            string content = "";
+            System.IO.StreamReader file_reader = new System.IO.StreamReader(dir);
+            while ((line = file_reader.ReadLine()) != null)
+            {
+                content += desencriptar(line);
+            }
+            file_reader.Close();
+            return content;
+        }
+
+
 
         // anterior binario convertido a caracter actual
         // no se puede decriptar

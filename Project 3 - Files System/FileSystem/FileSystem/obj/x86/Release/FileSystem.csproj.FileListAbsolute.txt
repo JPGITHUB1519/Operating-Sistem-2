@@ -32,3 +32,5 @@ C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Release\FileSystem.exe
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Release\FileSystem.pdb
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\bin\Release\FileSystem.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Release\FileSystem.frmDbClient.resources
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Release\FileSystem.frmpeticiones.resources

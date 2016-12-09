@@ -65,3 +65,7 @@ C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\RdlCompile.cache
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\RdlCompile.compiled
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\bin\Debug\FileSystem.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmDbClient.resources
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmsolicitudes.resources
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmpeticiones.resources
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\FileSystem\obj\x86\Debug\FileSystem.frmconsulta.resources

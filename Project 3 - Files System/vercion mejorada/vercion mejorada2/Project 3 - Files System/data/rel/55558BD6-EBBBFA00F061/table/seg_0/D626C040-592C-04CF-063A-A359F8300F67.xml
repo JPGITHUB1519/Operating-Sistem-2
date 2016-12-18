@@ -1,0 +1,261 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D626C040-592C-04CF-063A-A359F8300F67" name="Persona">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:06:05 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idpersona" id="250D103A-3F1D-F446-1548-380AC3ACE36B">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B4856C62-7AEE-8D35-51C1-BA3137360F0B">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="B7916CA2-ED1C-CC93-2D88-3FABE1DF43D6">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="51DB1829-5A43-29E3-1EC5-0BFD98596169">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="B926AF3E-FEBF-1AB9-A8F7-DFDB81F114D8">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_civil" id="55A22C07-3AD7-4E64-BE25-EF9FB53B7F51">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_vivo" id="2245181F-6697-3493-92C2-152003A7E95F">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ocupacion" id="6D400369-1EAA-C964-BE17-68E793F36360">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Barrio_idbarrio" id="CF100320-383B-220F-2435-0E99534D519B">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:34 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFBDAD15-03F8-AD2D-610B-A52C0DBE62BC" referredColumn="1F77B000-2079-90A8-894F-DE5ED20A2BE8"/>
+</associations>
+</Column>
+<Column name="Urbanización_idurbanizacion" id="CD31928D-0B8C-B78D-72D9-F04A15FADB95">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:44 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D81A1BF9-7E0A-2491-8EB1-8540B6094CA4" referredColumn="F4929B91-4290-EAAF-BF04-803036380A68"/>
+</associations>
+</Column>
+<Column name="Seccion_dm_idseccion_dm" id="9CA8A37C-C895-EA10-89B6-795893D842A9">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:11:13 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56488506-B580-C915-3CB1-B603AD10690A" referredColumn="2BEC98B9-1FA2-7DFB-3FDC-50D501D6D112"/>
+</associations>
+</Column>
+<Column name="Barrio_dm_idbarrio_dm" id="41E9140D-183B-4754-B51E-D7E6D6FCF429">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:15:17 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3EDA84C-43EB-79FD-C979-1BA16EA40F01" referredColumn="EE6AE194-7846-B61B-BDB2-071E7CC8D4A9"/>
+</associations>
+</Column>
+<Column name="Urbanizacion_dm_idurbanizacion_dm" id="B4F95058-C78B-FAAC-F595-F1A9F587B308">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:15:24 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B154FFC4-A33C-EF45-1EBD-9528BC49D37B" referredColumn="0F13113D-C858-F564-C722-D294AD3CD4BF"/>
+</associations>
+</Column>
+<Column name="Distrito_Municipal_idmunicipio" id="BDDB027F-FAC0-E7AD-4B90-8D941C674C81">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:18:07 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66170C1D-23D6-1A1C-9A50-5110BCD9D463" referredColumn="F605B351-637F-9365-4AD0-C6B3672DF835"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BBCCCEF-5594-211E-F941-8C4492938850" name="Persona_PK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:16 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="250D103A-3F1D-F446-1548-380AC3ACE36B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E7D0839-12E2-D745-2650-F6CD2869ABAE" name="Persona_Barrio_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:34 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF100320-383B-220F-2435-0E99534D519B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="232872F4-3748-319F-A7A0-3D17810554AE" name="Persona_Urbanización_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:10:44 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD31928D-0B8C-B78D-72D9-F04A15FADB95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4491031D-96E8-D14B-BACF-C257DC3C1109" name="Persona_Seccion_dm_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:11:13 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CA8A37C-C895-EA10-89B6-795893D842A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27EB0EFA-19A3-2105-00B1-D361F670FDCF" name="Persona_Barrio_dm_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:15:17 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41E9140D-183B-4754-B51E-D7E6D6FCF429"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="196631C9-6A38-B3CB-B4C0-14FD9152F866" name="Persona_Urbanizacion_dm_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:15:24 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4F95058-C78B-FAAC-F595-F1A9F587B308"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D421AAD9-46FE-64E0-E67D-CCC4633DB341" name="Persona_Distrito_Municipal_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:18:07 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDDB027F-FAC0-E7AD-4B90-8D941C674C81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

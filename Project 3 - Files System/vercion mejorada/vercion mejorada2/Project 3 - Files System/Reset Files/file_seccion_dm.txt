@@ -1,0 +1,1 @@
+idseccion_dm,iddistrito,nombre,poblacion,area,punto_cardinal

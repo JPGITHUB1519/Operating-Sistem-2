@@ -1,0 +1,4 @@
+idbarrio,idmunicipio,nombre,poblacion,area,punto_cardinal
+401,201,los coquitos,50000,15,Este
+402,202,los polanco,1500,20,norte
+403,203,valenzuela,2500,50,este

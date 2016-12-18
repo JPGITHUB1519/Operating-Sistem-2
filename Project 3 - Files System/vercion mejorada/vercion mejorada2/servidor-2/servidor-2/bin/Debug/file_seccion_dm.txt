@@ -1,0 +1,4 @@
+idseccion_dm,iddistrito,nombre,poblacion,area,punto_cardinal
+601,301,sector 1,150,23,este
+602,302,sector 2,931,16,oeste
+603,303,sector 3,250,8,norte

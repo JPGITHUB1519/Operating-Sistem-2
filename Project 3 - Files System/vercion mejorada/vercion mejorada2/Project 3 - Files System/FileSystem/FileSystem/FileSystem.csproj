@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5618F9D0-6792-40D2-9650-A2652F101E1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileSystem</RootNamespace>
+    <AssemblyName>FileSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataset.cs">
+      <DependentUpon>dataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsBarrio.Designer.cs">
+      <DependentUpon>FrmConsBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsBarrioDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsBarrioDM.Designer.cs">
+      <DependentUpon>FrmConsBarrioDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsDistrito_municipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsDistrito_municipal.Designer.cs">
+      <DependentUpon>FrmConsDistrito_municipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsMunicipio.Designer.cs">
+      <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsPersona.Designer.cs">
+      <DependentUpon>FrmConsPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsProvincia.Designer.cs">
+      <DependentUpon>FrmConsProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsReporteGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsReporteGeneral.Designer.cs">
+      <DependentUpon>FrmConsReporteGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsSeccionDm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsSeccionDm.Designer.cs">
+      <DependentUpon>FrmConsSeccionDm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsUrbanizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsUrbanizacion.Designer.cs">
+      <DependentUpon>FrmConsUrbanizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsUrbanizacionDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsUrbanizacionDM.Designer.cs">
+      <DependentUpon>FrmConsUrbanizacionDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDbClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDbClient.Designer.cs">
+      <DependentUpon>frmDbClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantBarrio.Designer.cs">
+      <DependentUpon>FrmMantBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantBarrioDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantBarrioDM.Designer.cs">
+      <DependentUpon>FrmMantBarrioDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantDistrito_Municipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantDistrito_Municipal.Designer.cs">
+      <DependentUpon>FrmMantDistrito_Municipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantMunicipio.Designer.cs">
+      <DependentUpon>frmMantMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantPersonas.Designer.cs">
+      <DependentUpon>FrmMantPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantProvincia.Designer.cs">
+      <DependentUpon>frmMantProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantSeccionDm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantSeccionDm.Designer.cs">
+      <DependentUpon>FrmMantSeccionDm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantUrbanizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantUrbanizacion.Designer.cs">
+      <DependentUpon>FrmMantUrbanizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantUrbanizacionDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantUrbanizacionDM.Designer.cs">
+      <DependentUpon>FrmMantUrbanizacionDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmreportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreportes.Designer.cs">
+      <DependentUpon>frmreportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportesGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportesGeneral.Designer.cs">
+      <DependentUpon>FrmReportesGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmConsBarrio.resx">
+      <DependentUpon>FrmConsBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsBarrioDM.resx">
+      <DependentUpon>FrmConsBarrioDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsDistrito_municipal.resx">
+      <DependentUpon>FrmConsDistrito_municipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsMunicipio.resx">
+      <DependentUpon>FrmConsMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsPersona.resx">
+      <DependentUpon>FrmConsPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsProvincia.resx">
+      <DependentUpon>FrmConsProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsReporteGeneral.resx">
+      <DependentUpon>FrmConsReporteGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsSeccionDm.resx">
+      <DependentUpon>FrmConsSeccionDm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsUrbanizacion.resx">
+      <DependentUpon>FrmConsUrbanizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsUrbanizacionDM.resx">
+      <DependentUpon>FrmConsUrbanizacionDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDbClient.resx">
+      <DependentUpon>frmDbClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantBarrio.resx">
+      <DependentUpon>FrmMantBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantBarrioDM.resx">
+      <DependentUpon>FrmMantBarrioDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantDistrito_Municipal.resx">
+      <DependentUpon>FrmMantDistrito_Municipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantMunicipio.resx">
+      <DependentUpon>frmMantMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantPersonas.resx">
+      <DependentUpon>FrmMantPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantProvincia.resx">
+      <DependentUpon>frmMantProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantSeccionDm.resx">
+      <DependentUpon>FrmMantSeccionDm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantUrbanizacion.resx">
+      <DependentUpon>FrmMantUrbanizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantUrbanizacionDM.resx">
+      <DependentUpon>FrmMantUrbanizacionDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreportes.resx">
+      <DependentUpon>frmreportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportesGeneral.resx">
+      <DependentUpon>FrmReportesGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reporte_barrio.rdlc" />
+    <EmbeddedResource Include="reporte_barrio_dm.rdlc" />
+    <EmbeddedResource Include="reporte_distrito_municipal.rdlc" />
+    <EmbeddedResource Include="reporte_municipio.rdlc" />
+    <EmbeddedResource Include="reporte_persona.rdlc" />
+    <EmbeddedResource Include="reporte_provincia.rdlc" />
+    <EmbeddedResource Include="reporte_urbanizacion.rdlc" />
+    <EmbeddedResource Include="reporte_seccion_dm.rdlc" />
+    <EmbeddedResource Include="reporte_urbanizacion_dm.rdlc" />
+    <None Include="dataset.xsc">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dataset.xss">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Utils.Provincia.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utilities.csproj">
+      <Project>{EC4B79BE-BE5C-46DC-9345-C48EF50C5448}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Interface-Login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

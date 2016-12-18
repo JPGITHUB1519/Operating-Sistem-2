@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ABA72FFA-5254-59E4-D4D0-1C79AD583387" containerWithKeyObject="34F734E6-64B7-6043-9B8B-A1054855C3FD" localFKIndex="41DACC07-7ADE-FE45-2446-AF5626F8E59B" name="Seccion_dm_Distrito_Municipal_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 14:06:11 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<referredTableLongName>Distrito_Municipal</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E369D292-BAD8-1C21-EAF9-452DDEF719F1</referredTableID>
+<keyObject>5AEA925D-6FDC-0F39-7D1D-FA3EC43C6F52</keyObject>
+<referredKeyID>5AEA925D-6FDC-0F39-7D1D-FA3EC43C6F52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>iddistrito</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,5 @@
+idprovincia,nombre,location,area,punto_cardinal
+101,Santo Domingo,18°30′00″N 69°59′00″O,916,sureste
+102,santiago,19°29′N 70°41′O,2806,norte
+103,la vega,19°13′N 70°32′O,2292,norte
+1,4,4,4,4

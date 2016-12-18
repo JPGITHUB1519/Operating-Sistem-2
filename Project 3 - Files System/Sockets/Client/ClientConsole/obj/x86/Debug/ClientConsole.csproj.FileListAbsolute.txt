@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\Client\ClientConsole\bin\Debug\ClientConsole.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\Client\ClientConsole\bin\Debug\ClientConsole.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\Client\ClientConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\Client\ClientConsole\obj\x86\Debug\ClientConsole.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\Client\ClientConsole\obj\x86\Debug\ClientConsole.pdb

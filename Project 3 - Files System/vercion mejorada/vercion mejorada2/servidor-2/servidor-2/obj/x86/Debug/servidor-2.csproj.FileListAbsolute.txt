@@ -1,0 +1,12 @@
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\bin\Debug\servidor-2.exe
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\bin\Debug\servidor-2.pdb
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\obj\x86\Debug\servidor_2.Form1.resources
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\obj\x86\Debug\servidor_2.Properties.Resources.resources
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\obj\x86\Debug\servidor-2.csproj.GenerateResource.Cache
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\obj\x86\Debug\servidor-2.exe
+c:\users\yan\documents\visual studio 2010\Projects\servidor-2\servidor-2\obj\x86\Debug\servidor-2.pdb
+C:\Users\YAN\documents\visual studio 2010\Projects\servidor-2\servidor-2\obj\x86\Debug\servidor-2.csprojResolveAssemblyReference.cache
+C:\Users\YAN\documents\visual studio 2010\Projects\servidor-2\servidor-2\bin\Debug\Utils.dll
+C:\Users\YAN\documents\visual studio 2010\Projects\servidor-2\servidor-2\bin\Debug\Utils.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\vercion mejorada\vercion mejorada2\servidor-2\servidor-2\obj\x86\Debug\servidor-2.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\vercion mejorada\vercion mejorada2\servidor-2\servidor-2\obj\x86\Debug\servidor-2.pdb

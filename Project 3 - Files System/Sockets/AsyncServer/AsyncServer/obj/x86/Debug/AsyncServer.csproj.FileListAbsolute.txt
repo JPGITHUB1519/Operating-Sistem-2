@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\AsyncServer\AsyncServer\bin\Debug\AsyncServer.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\AsyncServer\AsyncServer\bin\Debug\AsyncServer.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\AsyncServer\AsyncServer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\AsyncServer\AsyncServer\obj\x86\Debug\AsyncServer.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\AsyncServer\AsyncServer\obj\x86\Debug\AsyncServer.pdb

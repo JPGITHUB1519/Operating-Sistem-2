@@ -1,0 +1,15 @@
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.dll
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.pdb
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.dll
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.pdb
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.dll
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.dll
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.pdb
+C:\Users\YAN\Documents\Visual Studio 2010\Projects\servidor-2\Utils\bin\Debug\Utils.dll
+C:\Users\YAN\Documents\Visual Studio 2010\Projects\servidor-2\Utils\bin\Debug\Utils.pdb
+C:\Users\YAN\Documents\Visual Studio 2010\Projects\servidor-2\Utils\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+C:\Users\YAN\Documents\Visual Studio 2010\Projects\servidor-2\Utils\obj\Debug\Utils.dll
+C:\Users\YAN\Documents\Visual Studio 2010\Projects\servidor-2\Utils\obj\Debug\Utils.pdb

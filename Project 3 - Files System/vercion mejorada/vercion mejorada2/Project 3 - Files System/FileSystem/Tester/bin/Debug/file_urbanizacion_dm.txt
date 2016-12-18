@@ -1,0 +1,4 @@
+idurbanizacion_dm,iddistrito,nombre,poblacion,area,punto_cardinal
+801,301,urbanizacion dm1,79,60,este
+802,302,urbanizacion dm2,33,7,noroeste
+803,303,urbanizacion dm3,100,20,suroeste

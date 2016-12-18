@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Barrio.cs" />
     <Compile Include="BarrioDM.cs" />
+    <Compile Include="Communication.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="DistritoMunicipal.cs" />
     <Compile Include="Encrypt.cs" />

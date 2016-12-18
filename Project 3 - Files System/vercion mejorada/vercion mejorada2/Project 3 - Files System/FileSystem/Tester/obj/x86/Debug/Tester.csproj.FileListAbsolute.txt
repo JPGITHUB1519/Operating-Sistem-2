@@ -1,0 +1,21 @@
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.exe
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.pdb
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.exe
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.pdb
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.csprojResolveAssemblyReference.cache
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.dll
+C:\Users\Programador\Desktop\Universidad\Sistema Operativo 2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.dll
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.pdb
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.exe
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.pdb
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.dll
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.pdb
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.csprojResolveAssemblyReference.cache
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.exe
+C:\Users\YAN\Desktop\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.pdb

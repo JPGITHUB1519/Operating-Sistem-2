@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FCD14945-BCB9-2C8A-A149-487D825282AB" name="Urbanizacion_dm">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idurbanizacion_dm" id="0F13113D-C858-F564-C722-D294AD3CD4BF">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_Seccion_dmv1v1_idbarrio_dm</notNullConstraintName>
+</Column>
+<Column name="nombre" id="68ABD9D2-9646-B89C-A521-06B32F368A14">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poblacion" id="72625E46-ED5D-726F-1DCF-77BD9BF31A1E">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area" id="0A995E22-C034-C6B4-F965-A66BBB8459C5">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="punto_cardinal" id="93DCF2AD-7D93-9904-F908-CE48C9D16C91">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Distrito_Municipal_iddistrito" id="14A316D7-AB73-6CC8-16F0-A2E96A4A8FC3">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 14:06:26 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4117933-1557-9059-39B2-9EBDF2C01D4F" referredColumn="F605B351-637F-9365-4AD0-C6B3672DF835"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="968C71A2-483F-A72B-1491-D760C8957948" name="Seccion_dmv1v1_PK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 13:01:35 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F13113D-C858-F564-C722-D294AD3CD4BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="941B9F72-0EA5-8CEA-0568-141AAE3EAACD" name="Urbanizacion_dm_Distrito_Municipal_FK">
+<createdBy>Programador</createdBy>
+<createdTime>2016-11-14 14:06:26 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14A316D7-AB73-6CC8-16F0-A2E96A4A8FC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

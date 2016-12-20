@@ -1,0 +1,9 @@
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\bin\Debug\AsyncClientForm.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\bin\Debug\AsyncClientForm.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\AsyncClientForm.Form1.resources
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\AsyncClientForm.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\AsyncClientForm.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClientForm\obj\x86\Debug\AsyncClientForm.pdb

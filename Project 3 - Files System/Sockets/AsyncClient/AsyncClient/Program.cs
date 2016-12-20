@@ -47,13 +47,13 @@ namespace AsyncClient
             {
                 // test server with multiple request
                 // testing
-                Thread.Sleep(500);
+                //Thread.Sleep(500);
                 // send data to server
-                //Console.WriteLine("Enter a Request : ");
-                //string req = Console.ReadLine();
+                Console.WriteLine("Enter a Request : ");
+                string req = Console.ReadLine();
                 //byte[] buffer = Encoding.ASCII.GetBytes(req);
                 // testing
-                byte[] buffer = Encoding.ASCII.GetBytes("get time");
+                byte[] buffer = Encoding.ASCII.GetBytes(req);
                 _clientSocket.Send(buffer);
                 // receive data from server
                 byte[] receivedBuf = new byte[1024];

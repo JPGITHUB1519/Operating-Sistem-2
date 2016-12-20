@@ -8,3 +8,8 @@ C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.dll
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.pdb
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.pdb
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.dll
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Utils\bin\Debug\Utils.pdb
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.dll
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Utils\obj\Debug\Utils.pdb

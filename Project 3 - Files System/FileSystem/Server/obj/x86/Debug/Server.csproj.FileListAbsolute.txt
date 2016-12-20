@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\bin\Debug\Server.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\bin\Debug\Server.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\bin\Debug\Utils.dll
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\bin\Debug\Utils.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\obj\x86\Debug\Server.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Server\obj\x86\Debug\Server.pdb

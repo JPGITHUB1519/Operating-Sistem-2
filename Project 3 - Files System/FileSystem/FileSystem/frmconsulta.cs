@@ -33,10 +33,8 @@ namespace FileSystem
         {
             //query = "Select distinct idprovincia, nombre, location, area from provincia where idprovincia = 1";
             query = query.ToLower();
-            Dictionary<string, object> filters = new Dictionary<string, object>();
-            filters = Utilities.selectQueryReader(query);
             List<string> result;
-            result = Provincia.filterProvincia(filters);
+            result = Utilities.executeQuery(query);
             return result;
             
         }

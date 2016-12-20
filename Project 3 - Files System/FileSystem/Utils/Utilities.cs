@@ -549,6 +549,136 @@ namespace Utils
             return result;
 
         }
+
+        // metodo principal ejecutar consulta
+        public static List<string> executeQuery(string query)
+        {
+            query = query.ToLower();
+            Dictionary<string, object> filters = new Dictionary<string, object>();
+            filters = Utilities.selectQueryReader(query);
+            string table_name = (string) filters["table_name"];
+            List<string> result = new List<string>();
+
+            if(table_name == "municipio")
+            {
+                result = Municipio.filterMunicipio(filters);
+            }
+
+            if (table_name == "provincia")
+            {
+                result = Provincia.filterProvincia(filters);
+            }
+
+            if (table_name == "barrio")
+            {
+                result = result = Barrio.filterBarrio(filters);
+            }
+
+            if (table_name == "urbanizacion")
+            {
+                result = result = Urbanizacion.filterUrbanizacion(filters);
+            }
+
+            if (table_name == "distrito_municipal")
+            {
+                result = result = DistritoMunicipal.filterDistritoMunicipal(filters);
+            }
+
+            if (table_name == "seccion_dm")
+            {
+                result = result = SeccionDM.filterSeccionDM(filters);
+            }
+
+            if (table_name == "barrio_dm")
+            {
+                result = result = BarrioDM.filterBarrioDM(filters);
+            }
+
+            if (table_name == "urbanizacion_dm")
+            {
+                result = result = UrbanizacionDM.filterUrbanizacionDM(filters);
+            }
+
+            if (table_name == "persona")
+            {
+                result = result = Persona.filterPersona(filters);
+            }
+
+            return result;
+            
+        }
+
+        public static string executeQueryReturnString(string query)
+        {
+            query = query.ToLower();
+            Dictionary<string, object> filters = new Dictionary<string, object>();
+            filters = Utilities.selectQueryReader(query);
+            string table_name = (string)filters["table_name"];
+            List<string> result = new List<string>();
+            string result_string = "";
+
+            if (table_name == "municipio")
+            {
+                result = Municipio.filterMunicipio(filters);
+            }
+
+            if (table_name == "provincia")
+            {
+                result = Provincia.filterProvincia(filters);
+            }
+
+            if (table_name == "barrio")
+            {
+                result = result = Barrio.filterBarrio(filters);
+            }
+
+            if (table_name == "urbanizacion")
+            {
+                result = result = Urbanizacion.filterUrbanizacion(filters);
+            }
+
+            if (table_name == "distrito_municipal")
+            {
+                result = result = DistritoMunicipal.filterDistritoMunicipal(filters);
+            }
+
+            if (table_name == "seccion_dm")
+            {
+                result = result = SeccionDM.filterSeccionDM(filters);
+            }
+
+            if (table_name == "barrio_dm")
+            {
+                result = result = BarrioDM.filterBarrioDM(filters);
+            }
+
+            if (table_name == "urbanizacion_dm")
+            {
+                result = result = UrbanizacionDM.filterUrbanizacionDM(filters);
+            }
+
+            if (table_name == "persona")
+            {
+                result = result = Persona.filterPersona(filters);
+            }
+
+            for(int i = 0; i < result.Count; i++)
+            {
+                if (i != result.Count - 1)
+                {
+                    result_string += result[i] + "[";
+                }
+                else
+                {
+                    result_string += result[i];
+                }
+
+            }
+
+            return result_string;
+        }
+
+
            /*
         public static Dictionary<string, object> selectQueryReader(string query)
         {

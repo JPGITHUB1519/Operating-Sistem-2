@@ -11,7 +11,7 @@ namespace AsyncServer
         private static Socket _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         private static List<Socket> _clientSockets = new List<Socket>();
         private static byte[] _buffer = new Byte[1024];
-        static IPEndPoint direccion = new IPEndPoint(IPAddress.Any, 100);
+        static IPEndPoint direccion = new IPEndPoint(IPAddress.Parse("148.255.64.94"), 100);
         
         static void Main(string[] args)
         {

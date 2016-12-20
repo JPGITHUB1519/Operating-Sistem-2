@@ -112,15 +112,12 @@ namespace Tester
 
 
 
-            string query = "Select idprovincia, area from provincia where idprovincia = 1";
-            query = query.ToLower();
-            Dictionary<string, object> filters = new Dictionary<string, object>();
-            filters = Utilities.selectQueryReader(query);   
-            List<string> result;
-            result = Provincia.filterProvincia(filters);
-            Utilities.printCollection(result);
+            string query = "select * from persona";
+            string result = Utilities.executeQueryReturnString(query);
+            Console.Write(result);
+            //string[] array = result.Split('[');
+            //Utilities.printCollection(array);
             Console.ReadKey();
-
             /*
             string query = "Select distinct idprovincia, nombre from provincia where idprovincia = 1";
             List<string> result = Utilities.getParametersQuery(query);

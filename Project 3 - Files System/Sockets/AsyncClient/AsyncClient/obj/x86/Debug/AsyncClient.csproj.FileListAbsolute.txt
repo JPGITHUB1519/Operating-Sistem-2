@@ -5,3 +5,6 @@ C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\AsyncClient\AsyncClient\obj\x86\Debug\AsyncClient.pdb
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClient\obj\x86\Debug\AsyncClient.exe
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClient\obj\x86\Debug\AsyncClient.pdb
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClient\bin\Debug\AsyncClient.exe
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\Sockets\AsyncClient\AsyncClient\bin\Debug\AsyncClient.pdb

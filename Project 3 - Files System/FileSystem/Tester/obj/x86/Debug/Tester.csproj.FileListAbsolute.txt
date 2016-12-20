@@ -12,3 +12,10 @@ C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.exe
 C:\Documents and Settings\Administrador\Escritorio\Universidad\Operating-System-2\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.pdb
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.exe
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.pdb
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.exe
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\bin\Debug\Tester.pdb
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.dll
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\bin\Debug\Utils.pdb
+C:\Users\Estudiantes\Desktop\Operating-System-2-master\Operating-System-2-master\Project 3 - Files System\FileSystem\Tester\obj\x86\Debug\Tester.csprojResolveAssemblyReference.cache

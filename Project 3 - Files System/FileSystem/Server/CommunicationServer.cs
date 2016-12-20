@@ -50,10 +50,9 @@ namespace Utils
             string response = string.Empty;
             if (request.ToLower() != "")
             {
-                lista = Utilities.readIdsFromFile(Utilities.provincia_dir);
                 //response = DateTime.Now.ToLongTimeString();
                 // make request and return
-                response = "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.";
+                response = Utilities.executeQueryReturnString(request);
             }
             else
             {
@@ -70,6 +69,76 @@ namespace Utils
         {
             Socket socket = (Socket)AR.AsyncState;
             socket.EndSend(AR);
+        }
+
+        public static string executeQueryReturnString(string query)
+        {
+            query = query.ToLower();
+            Dictionary<string, object> filters = new Dictionary<string, object>();
+            filters = Utilities.selectQueryReader(query);
+            string table_name = (string)filters["table_name"];
+            List<string> result = new List<string>();
+            string result_string = "";
+
+            if (table_name == "municipio")
+            {
+                result = Municipio.filterMunicipio(filters);
+            }
+
+            if (table_name == "provincia")
+            {
+                result = Provincia.filterProvincia(filters);
+            }
+
+            if (table_name == "barrio")
+            {
+                result = result = Barrio.filterBarrio(filters);
+            }
+
+            if (table_name == "urbanizacion")
+            {
+                result = result = Urbanizacion.filterUrbanizacion(filters);
+            }
+
+            if (table_name == "distrito_municipal")
+            {
+                result = result = DistritoMunicipal.filterDistritoMunicipal(filters);
+            }
+
+            if (table_name == "seccion_dm")
+            {
+                result = result = SeccionDM.filterSeccionDM(filters);
+            }
+
+            if (table_name == "barrio_dm")
+            {
+                result = result = BarrioDM.filterBarrioDM(filters);
+            }
+
+            if (table_name == "urbanizacion_dm")
+            {
+                result = result = UrbanizacionDM.filterUrbanizacionDM(filters);
+            }
+
+            if (table_name == "persona")
+            {
+                result = result = Persona.filterPersona(filters);
+            }
+
+            for (int i = 0; i < result.Count; i++)
+            {
+                if (i != result.Count - 1)
+                {
+                    result_string += result[i] + "[";
+                }
+                else
+                {
+                    result_string += result[i];
+                }
+
+            }
+
+            return result_string;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace ClientConsole
     {
         public static Socket mysocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         // ip
-        public static IPEndPoint direccion = new IPEndPoint(IPAddress.Parse("10.0.0.10"), 1234);
+        public static IPEndPoint direccion = new IPEndPoint(IPAddress.Loopback, 100);
    
         public static void conectar()
         {

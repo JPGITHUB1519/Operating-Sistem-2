@@ -678,7 +678,12 @@ namespace Utils
             return result_string;
         }
 
-
+        /* convert the recors results to a list */
+        public static string[] queryResultStripper(string result)
+        {
+            string [] records = result.Split('[');
+            return records;
+        }
            /*
         public static Dictionary<string, object> selectQueryReader(string query)
         {

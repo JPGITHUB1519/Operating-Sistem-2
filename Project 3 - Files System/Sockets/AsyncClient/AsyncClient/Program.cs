@@ -60,9 +60,26 @@ namespace AsyncClient
                 int rec = _clientSocket.Receive(receivedBuf);
                 byte[] data = new byte[rec];
                 Array.Copy(receivedBuf, data, rec);
-                Console.WriteLine("Received : " + Encoding.ASCII.GetString(data));
+                string response_to_string = Encoding.ASCII.GetString(data);
+                // printing string
+                //Console.WriteLine("Received : " + response_to_string);
+
+                //printing string []
+                string[] records = queryResultStripper(response_to_string);
+                foreach(string record in records)
+                {
+                    Console.WriteLine(record);
+                }
+
             }
             
+        }
+
+        // strip results from server
+        public static string[] queryResultStripper(string result)
+        {
+            string[] records = result.Split('[');
+            return records;
         }
     }
 }

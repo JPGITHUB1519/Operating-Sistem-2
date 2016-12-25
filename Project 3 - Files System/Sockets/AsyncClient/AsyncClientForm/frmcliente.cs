@@ -7,25 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-
 namespace AsyncClientForm
 {
-    public partial class Form1 : Form
+    public partial class frmcliente : Form
     {
-        public Form1()
+        public frmcliente()
         {
             InitializeComponent();
         }
-
+        public static List<string> response_list;
         private void button1_Click(object sender, EventArgs e)
         {
-            string response = CommunicationClient.sendRequestForString(txtrequest.Text.Trim());
-            MessageBox.Show(response);
+            string request = "query[" + txtrequest.Text.Trim();
+            string response = CommunicationClient.sendRequestForString(request);
+            //MessageBox.Show(response);
+            response_list = CommunicationClient.stringResponseToList(response);
+            this.dataGridView1.DataSource = CommunicationClient.ConvertListToDataTable(response_list);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void frmcliente_Load(object sender, EventArgs e)
         {
-            CommunicationClient.Connect();
+            //CommunicationClient.Connect();
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Utils
         public static string barrio_dm_dir = "file_barrio_dm.txt";
         public static string urbanizacion_dm_dir = "file_urbanizacion_dm.txt";
         public static string persona_dir = "file_persona.txt";
+        public static string user_dir = @"../../../../database/user.txt";
 
         public static List<string> readFileByList(string dir)
         {

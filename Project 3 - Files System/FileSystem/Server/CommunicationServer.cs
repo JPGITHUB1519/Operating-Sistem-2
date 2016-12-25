@@ -14,6 +14,7 @@ namespace Utils
         private static List<Socket> _clientSockets = new List<Socket>();
         private static byte[] _buffer = new Byte[1024];
         static IPEndPoint direccion = new IPEndPoint(IPAddress.Any, 100);
+        private static bool is_authenticated = false;
 
         public static void setupServer()
         {
@@ -38,27 +39,67 @@ namespace Utils
 
         private static void ReceiveCallBack(IAsyncResult AR)
         {
+            string action;
             Socket socket = (Socket)AR.AsyncState;
             int received = socket.EndReceive(AR);
             byte[] databuf = new byte[received];
             Array.Copy(_buffer, databuf, received);
             // receiving text from client
             string request = Encoding.ASCII.GetString(databuf);
-            List<string> lista = new List<string>();
-            Console.WriteLine("Text Received : " + request);
-            // enviar data a cliente
+            // desencriptar peticion encriptada enviada por el cliente
+            request = Encrypt.desencriptar(request);
+ 
+            
             string response = string.Empty;
-            if (request.ToLower() != "")
+            // si esta autenticado, puedo hacer request
+            if (is_authenticated == true)
             {
-                //response = DateTime.Now.ToLongTimeString();
-                // make request and return
-                response = Utilities.executeQueryReturnString(request);
+                // request format action,query
+                action = request.Split('[')[0];
+                request = request.Split('[')[1];
+                if (action == "query")
+                {
+                    List<string> lista = new List<string>();
+                    // enviar data a cliente
+                    if (request.ToLower() != "")
+                    {
+                        //response = DateTime.Now.ToLongTimeString();
+                        // make request and return
+                        Console.WriteLine("Petition : " + request);
+                        response = Utilities.executeQueryReturnString(request);
+                    }
+                    else
+                    {
+                        response = "Invalid Request";
+                    }   
+                }
+
+                if (action == "signup")
+                {
+                    Utilities.writeSingleLineToFile(Utilities.user_dir, request);
+                    response = "exito";
+                }
             }
             else
             {
-                response = "Invalid Request";
+                // si no está autenticado, autenticalo
+                List<string> users = new List<string>();
+                users = Utilities.readFileByList(Utilities.user_dir);
+                if (users.Contains(request))
+                {
+                    Console.WriteLine("Client with Code " + request + " Logged in Succesfully");
+                    is_authenticated = true;
+                    response = "authenticated";
+                }
+                else
+                {
+                    Console.WriteLine("Client login Failed");
+                    response = "password error";
+                }
             }
 
+            // encriptar respuesta para enviar de enviarsela al cliente encriptada
+            response = Encrypt.encriptar(response);
             byte[] data = Encoding.ASCII.GetBytes(response);
             socket.BeginSend(data, 0, data.Length, SocketFlags.None, new AsyncCallback(SendCallBack), socket);
             // receive again after send

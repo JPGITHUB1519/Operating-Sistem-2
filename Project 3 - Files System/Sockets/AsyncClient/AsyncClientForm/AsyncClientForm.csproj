@@ -34,8 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,16 +50,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommunicationClient.cs" />
+    <Compile Include="Encrypt.cs" />
     <Compile Include="frmcliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="frmcliente.Designer.cs">
       <DependentUpon>frmcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utitilities.cs" />
+    <EmbeddedResource Include="frmcliente.resx">
       <DependentUpon>frmcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
